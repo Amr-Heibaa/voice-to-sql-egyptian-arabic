@@ -18,6 +18,7 @@ This file explains **how the project reached V3.1** so that a teammate or AI age
 | Abstract, title and Fields 4–5 finalized | 23 Oct 2026 | TA-approved short Abstract inserted verbatim and confirmed final by the student (D-26, D-27). Title: the student kept *Voice-to-SQL in Egyptian Arabic* (D-28) and the **TA approved it** (D-29). Fields 4–5 confirmed after the AraSpider licensing correction (D-30) | **All six registration fields final; form NOT submitted** |
 | Final export and independent audit | 23 Oct 2026 | Final registration ZIP exported (33 tracked files + manifest, all verified) together with `FINAL_FORM_COPY_PASTE.md`; independent final package audit completed | Basis of this repository |
 | Clean V3.1 repository (this repo) | 23 Oct 2026 | Phase 1: local staging of a V3.1-only repository whose canonical documents embed the approved package text with SHA-256 provenance | No Git repository, commit, remote or push |
+| Private GitHub repository (D-32) | 23 Oct 2026 | Phase 2: after an independent review approved the D-31 staging ZIP, Git was initialized on `main`, the approved files were committed and pushed to the new **private** repository `Amr-Heibaa/voice-to-sql-egyptian-arabic`; visibility and file tree verified | No change to project content; registration NOT SUBMITTED |
 | Repository corrections (D-31) | 23 Oct 2026 | Phase 1.5: stale status wording and references to files outside the repository corrected in the repository copies (marked as amended derivatives; original hashes kept); the registration package itself is unchanged | No change to scope, title, Abstract, v6, architecture or evaluation methodology |
 
 ## 2. Title history
@@ -110,7 +111,9 @@ Condensed from `02_CURRENT_SPECIFICATION/V3_TO_V3_1_DECISION_CHANGELOG.md` in th
 | D-30 | 23 Oct | Fields 4–5 confirmed; AraSpider licensing: HF repository MIT, underlying Spider CC BY-SA 4.0, redistribution uncertain, reference only |
 | D-31 | 23 Oct | **Repository only:** clean-repository documentation corrections (stale DS-11 status, V2 form filename, status wording, references to excluded files); 35 exact edits, recorded in [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md) |
 
-New decisions continue from **D-32** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
+| D-32 | 23 Oct | **Repository only:** private GitHub repository created and initial commit pushed after independent review; recorded in [docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md) |
+
+New decisions continue from **D-33** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
 
 ## 6. Where the history lives (not in this repository)
 

@@ -18,7 +18,7 @@ This is the **live status file**. Status lines inside the document blocks of `do
 | Voice recordings | **PLANNED, NOT COLLECTED** | Consent protocol and any required ethics review must come first |
 | Evaluation | **NOT STARTED** | No results of any kind exist |
 | User interviews / validation studies | **NOT STARTED** | Market need is an unverified hypothesis (H-M) |
-| GitHub repository | **LOCAL STAGING ONLY (Phase 1.5)** | Name `voice-to-sql-egyptian-arabic`; intended visibility **private**; no Git repository initialized, no commit, no remote, no push; Phase 2 needs explicit authorization |
+| GitHub repository | **CREATED, PRIVATE (D-32, 23 Oct 2026)** | https://github.com/Amr-Heibaa/voice-to-sql-egyptian-arabic; visibility confirmed `PRIVATE`; branch `main`; initial commit `c05bd5a`; owner only, no collaborators invited ([docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md)) |
 | License | **NONE** | No LICENSE file; licensing and ownership undecided; no rights granted |
 
 **Fixed V3.1 scope (unchanged):** one AI Central Hub with **three mandatory workspaces: Sales, Inventory and HR**; ambiguity-aware selective answering (BIR, Answer / Clarify / Abstain); **Egyptian-Arabic Voice → Arabic Text → English Text → English-to-SQL, with Arabic-anchored ambiguity checking**; safe read-only SQL; **AI Schema Design with Admin review** (approval publishes metadata only, never DDL).
@@ -69,7 +69,7 @@ Other pending items: ethics/consent review for recordings; optional permission r
 ## 5. Next steps
 
 1. **Student:** fill and personally submit the official MIU registration form using [docs/REGISTRATION_FORM_FIELDS.md](docs/REGISTRATION_FORM_FIELDS.md) and the v6 image.
-2. **Repository Phase 2 (needs explicit authorization):** after the independent review of this staging, initialize Git, make the first commit, create the **private** GitHub repository `voice-to-sql-egyptian-arabic` and push this staged content.
+2. **Repository:** done. The private GitHub repository was created and pushed after independent review (D-32). Inviting collaborators needs separate approval.
 3. **Implementation:** does not start until separately authorized. The planned sequence is SPECIFICATION.md §20 (Phase 1: repo architecture, PostgreSQL demo schema, read-only privilege tests before any LLM is connected).
 
 ## 6. Update rule

@@ -82,6 +82,7 @@ Egyptian-Arabic voice or text
 | [CLAUDE.md](CLAUDE.md) | Claude Code entry point (imports AGENTS.md) |
 | [docs/README.md](docs/README.md) | Documentation index, provenance (SHA-256) and package path map |
 | [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md) | D-31 repository corrections, every edit with before/after text |
+| [docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md) | D-32 private GitHub repository creation and its verification |
 | [docs/SPECIFICATION.md](docs/SPECIFICATION.md) | **Canonical V3.1 specification (source of truth)** |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Architecture, demonstration contract and read-only/Admin governance contract |
 | [docs/DATASET_STRATEGY.md](docs/DATASET_STRATEGY.md) | Team-approved dataset strategy (DS-1–DS-8, DS-11) |
