@@ -1,0 +1,145 @@
+# ------------------------------------------------------------------
+# Voice-to-SQL in Egyptian Arabic — .gitignore
+# Blocks secrets, private participant data, third-party datasets,
+# archives/backups and build output. Always check `git status` too.
+# ------------------------------------------------------------------
+
+# --- Secrets and credentials ----------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+id_rsa*
+id_ed25519*
+service-account*.json
+*credentials*.json
+*.secret
+*.secrets
+.netrc
+.pgpass
+
+# --- Voice recordings and participant data (never in Git) -----------
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.oga
+*.opus
+*.webm
+*.aac
+*.wma
+*.amr
+*.3gp
+recordings/
+audio/
+consent/
+consent_forms/
+participants/
+speaker_keys/
+**/speaker_id_key*
+
+# --- Data: raw, external, generated and real personal data ----------
+data/raw/
+data/external/
+data/generated/
+data/private/
+data/real/
+datasets/downloads/
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+
+# --- Database files and dumps ---------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.backup
+*.bak
+pgdata/
+postgres-data/
+
+# --- Archives, backups and package snapshots ------------------------
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*_backup*/
+*_Backups/
+backups/
+archive/
+archives/
+
+# --- Python ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+
+# --- Node / frontend ------------------------------------------------
+node_modules/
+.next/
+out/
+.turbo/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Model artifacts, caches and experiment outputs -----------------
+models/
+checkpoints/
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.gguf
+.cache/
+huggingface/
+wandb/
+mlruns/
+runs/
+outputs/
+logs/
+*.log
+
+# --- Editors, OS and local agent settings ---------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+.claude/settings.local.json
+.claude/*.local.*
