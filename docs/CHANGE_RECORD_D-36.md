@@ -14,7 +14,8 @@
 - Visibility of the existing repository: **PRIVATE → PUBLIC**.
 - Changed by Claude Code, at the owner's request, through the owner's authenticated GitHub CLI session (`gh repo edit --visibility public`). The command succeeded at about **16:48 UTC on 24 Oct 2026**.
 - Unchanged: repository name, URL, owner, default branch (`main`), collaborators and their permissions, the pending invitation, and the branch protection on `main`.
-- No commit was created, nothing was pushed, and the Git history was **not** rewritten. Billing and plan were not changed. No LICENSE file was added.
+- The visibility change itself created no commit and no push, and the Git history was **not** rewritten. Billing and plan were not changed. No LICENSE file was added.
+- Afterwards, this record and the related documentation updates were committed on the feature branch `docs/d-36-public-visibility` and proposed to `main` through pull request #2, following the protected-branch workflow ([CONTRIBUTING.md](../CONTRIBUTING.md)).
 
 ## 2. Verification evidence
 
@@ -78,7 +79,7 @@ GitHub documents protected branches on public repositories as available on every
 1. **Permanent exposure.** Anyone can now clone or fork the repository. Making it private again would not remove copies that already exist.
 2. **Commit metadata** of existing commits (names and configured e-mail addresses) is public, as accepted in §3. Contributors should configure GitHub's private no-reply address before future commits.
 3. **Planning documents are public before registration:** the research plan, the final registration-form text and the evaluation design can be read by anyone while registration is still **NOT SUBMITTED**.
-4. **No license.** Public visibility grants no license. Under GitHub's Terms of Service others can view and fork the repository on GitHub; no other permission to use, copy, modify or distribute the materials is given, and licensing and ownership remain undecided.
+4. **No license.** No open-source or other separate license has been adopted, and public visibility is not a license. GitHub's Terms of Service give GitHub users limited permissions through the service, such as viewing the repository and forking it on GitHub. Those permissions come from GitHub's terms, not from the project; the project grants no additional right to reuse, copy, modify or redistribute the materials, and licensing and ownership remain undecided.
 5. **Collaboration history is public:** pull request #1, its review, and the collaborator account names listed in [D-34](CHANGE_RECORD_D-34.md).
 6. **Administrator control.** An administrator can still change the protection or the visibility in the repository settings; such a change must be a recorded team decision.
 7. **Repository description.** The GitHub repository description still uses the earlier title *Voice-to-SQL in Egyptian Arabic*, not the official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic*. Repository metadata was not changed by D-36.
@@ -102,3 +103,10 @@ GitHub documents protected branches on public repositories as available on every
 2. A controlled enforcement test of the branch protection (needs separate approval; carried over from D-35).
 3. Each contributor: switch the Git commit e-mail to GitHub's private no-reply address.
 4. Decide on licensing and ownership (no license until the team decides).
+
+## 9. Clarifications after independent review (still D-36)
+
+Before human review, the owner had pull request #2 reviewed independently (ChatGPT, as reported by the owner). The review approved it in principle and asked for two documentation clarifications, which were applied in a second commit on the same branch. They are part of D-36; no new decision was created.
+
+- **Licensing precision** (`README.md`, `PROJECT_STATUS.md` and §5 of this record): no open-source or other separate license has been adopted; GitHub's limited Terms-of-Service permissions (such as viewing and forking through the service) are distinguished from any additional reuse or redistribution rights, which the project does not grant. Ownership is still undecided.
+- **Commit chronology** (§1 of this record): the visibility change itself created no commit or push; the D-36 documentation was committed afterwards on its feature branch and proposed through pull request #2.
