@@ -1,3 +1,5 @@
+> **How to use this checklist.** Every checkbox is a personal attestation. The **PR author** ticks the author sections; the **human reviewer** ticks the reviewer checklist. An AI agent may draft this description, but it must **not** tick human attestation boxes. Checkboxes never replace GitHub's required formal approval (**Review changes → Approve** by a human collaborator other than the author).
+
 ## Summary
 
 <!-- What does this pull request change, and why? One short paragraph. -->
@@ -35,6 +37,8 @@
 
 ## AI assistance disclosure
 
+Select **exactly one** of these two options (a factual disclosure, not an attestation):
+
 - [ ] No AI tool was used for this PR.
 - [ ] An AI tool was used, as described below.
 
@@ -42,10 +46,14 @@
 
 **What the AI produced:** <!-- which files or parts -->
 
+To be ticked by the responsible human author, never by an AI agent:
+
 - [ ] I read and understood every AI-generated line and take responsibility for it.
 - [ ] No secrets, personal data or restricted datasets were shared with the AI tool.
 
-## Reviewer checklist
+## Reviewer checklist (human reviewer only)
+
+For the human reviewer, not the author and not an AI agent. Ticking these boxes does not approve the PR; the approval is GitHub's formal **Approve** review.
 
 - [ ] I read the whole diff, not only this description.
 - [ ] Facts match `PROJECT_STATUS.md` and `docs/SPECIFICATION.md`.

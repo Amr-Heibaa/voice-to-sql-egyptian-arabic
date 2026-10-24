@@ -26,11 +26,13 @@ Feature branch  ->  Pull Request  ->  Human code review  ->  Merge into main
 | Approvals are dismissed when new commits are pushed; the PR must be re-approved | GitHub branch protection |
 | All review conversations must be resolved before merging | GitHub branch protection |
 | No force pushes, no deletion of `main` | GitHub branch protection |
-| The rules apply to administrators too; nobody can bypass them | GitHub branch protection (`enforce_admins`) |
+| While the protection is configured, the rules apply to administrators too, with no bypass allowances | GitHub branch protection (`enforce_admins`) |
 | No force pushes to shared feature branches either; never rewrite published history | Team rule ([AGENTS.md](AGENTS.md#7-git-and-github)) |
 | Required CI checks | **None yet.** They will be added only once a working CI pipeline exists |
 
-The configuration and its verification evidence are in [docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md). If `main` ever accepts a direct push, stop and tell the repository owner (`Amr-Heibaa`).
+The configuration and its verification evidence are in [docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md). The settings were read back through the GitHub API; a real direct-push enforcement test has **not** been performed yet. If `main` ever accepts a direct push, stop and tell the repository owner (`Amr-Heibaa`).
+
+Branch protection is a repository setting. It binds administrators only while it is configured: an administrator (today, the owner) can still change or remove it in the repository settings. Any such change is a team decision recorded with a decision ID, never a way around a review.
 
 If no reviewer is available, **wait**. There is no emergency bypass, and the owner's own pull requests need another collaborator's approval too.
 
@@ -80,7 +82,12 @@ Keep names lowercase, use hyphens, and do not include personal data.
 - After new commits, ask for a fresh approval (stale approvals are dismissed automatically).
 - Merge only after approval, with all conversations resolved.
 
-**Owner sign-off (team rule, not yet enforced by GitHub):** changes to the marked blocks in `docs/`, to [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md), this file or `.github/` also need approval from the repository owner (`Amr-Heibaa`).
+**Owner sign-off (manual team rule, not enforced by GitHub).** Protected project-governance documentation means the marked blocks in `docs/`, [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md), this file and `.github/`.
+
+- **PR authored by another team member** that changes protected project-governance documentation: the repository owner (`Amr-Heibaa`) must review and approve it, by team policy.
+- **PR authored by the owner:** the owner's authorization is established by that authorship and the owner's explicit decision. The required GitHub approval must still come from **another human collaborator**.
+- **No self-approval:** an author can never satisfy the required GitHub approval by approving their own PR.
+- This is a manual team rule. It is **not** an enforced CODEOWNERS requirement; the repository has no CODEOWNERS file.
 
 ## 7. AI coding agents
 

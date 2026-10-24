@@ -30,6 +30,8 @@ The protection was applied by Claude Code, at the student's request, through the
 | Disable admin bypass | `enforce_admins` | `true`; bypass allowances: 0 |
 | Do not require CI checks yet | `required_status_checks` | None |
 
+These rules bind administrators **while the protection is configured**. They do not stop an administrator (today, the owner) from changing or removing the protection itself in the repository settings.
+
 Left disabled because they were not requested: code-owner reviews, approval of the most recent push by someone else (`require_last_push_approval`), signed commits, linear history, branch lock and fork syncing. Push restrictions by user or team exist only for organization repositories and are not needed here.
 
 ## 2. Verification evidence
@@ -50,7 +52,8 @@ All reads below were made through the GitHub API with the owner's account on 202
 
 ## 3. Consequences
 
-- Nobody, including the owner, can push directly to `main`. Every change, including this record, reaches `main` through a pull request approved by a collaborator other than its author.
+- While this protection stays configured, nobody, including the owner, can push directly to `main` (according to the stored settings; not yet tested with a real push). Every change, including this record, reaches `main` through a pull request approved by a collaborator other than its author.
+- A repository administrator can still change or remove the protection settings. Doing so is a team decision to be recorded, not part of the normal workflow.
 - Reviewers available today with write access: `sayeddabdou`, `selimmmm7` and `abdallahjr111`. `GeorgeBassem-dev` has a pending invitation (D-34) and can review once it is accepted.
 - An approval is dismissed when new commits are pushed, so the final version of a pull request is always the version that was approved.
 
@@ -83,3 +86,12 @@ Approved by the student on 24 Oct 2026 and documented in:
 1. A controlled enforcement test of the protection (needs separate approval).
 2. Optional extra rules: `require_last_push_approval`, a CODEOWNERS file so the owner sign-off in CONTRIBUTING.md §6 is enforced, squash-only merging, and automatic deletion of merged branches.
 3. Confirming the GitHub plan name from the account's billing page.
+
+## 8. Clarifications after independent review (still D-35)
+
+Before human review, the student had the pull request reviewed independently (ChatGPT, as reported by the student). The review approved it in principle and asked for clarifications, which were applied in a second commit on the same branch. They are part of D-35; no new decision was created.
+
+- [CONTRIBUTING.md](../CONTRIBUTING.md) §6: owner sign-off distinguishes PRs authored by other members (owner review and approval required by team policy) from PRs authored by the owner (authorization by authorship and explicit decision; the GitHub approval still comes from another human collaborator). No self-approval. It stays a manual rule, not CODEOWNERS.
+- `.github/pull_request_template.md`: exactly one AI-usage option; human attestations are ticked by the responsible human, never by an AI agent; the reviewer checklist is for the human reviewer; checkboxes do not replace GitHub's formal approval.
+- [CONTRIBUTING.md](../CONTRIBUTING.md) §2, this record and `PROJECT_STATUS.md`: protection binds administrators while configured, but an administrator can still change the settings; no real direct-push test has been performed.
+- In the pull request description, author attestation boxes that Claude Code had ticked were unticked until the human author confirms them; the factual AI-use disclosure was kept.
