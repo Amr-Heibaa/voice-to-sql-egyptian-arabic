@@ -23,6 +23,7 @@ This file explains **how the project reached V3.1** so that a teammate or AI age
 | Official title update (D-33) | 24 Oct 2026 | The TA explicitly approved the new official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic* (as reported by the student); Form Field 1 and all current documents updated; earlier titles kept as history | Abstract, Fields 2–6, scope, datasets, evaluation and v6 unchanged; repository name unchanged; registration NOT SUBMITTED |
 | Collaborator status recorded (D-34) | 24 Oct 2026 | Live GitHub state documented: 3 active write collaborators and 1 pending invitation, all invited from the owner account after the D-32 verification; D-32 kept as history | No GitHub changes made by Claude; registration NOT SUBMITTED |
 | Branch protection and team workflow (D-35) | 24 Oct 2026 | Protection configured on `main` (pull request with 1 approval by someone other than the author, stale approvals dismissed, conversations resolved, no force push or deletion, no admin bypass) and read back through the GitHub API; team workflow and pull request template added | Enforcement not yet tested; no collaborator changes; registration NOT SUBMITTED |
+| Public repository (D-36) | 24 Oct 2026 | After a public-release audit of all files and the full history, the existing repository was changed from **private** to **public** with the owner's authorization; Git history preserved; branch protection re-read and unchanged | No content, history or collaborator changes; D-32, D-34 and D-35 kept as history; registration NOT SUBMITTED |
 
 ## 2. Title history
 
@@ -120,8 +121,9 @@ Condensed from `02_CURRENT_SPECIFICATION/V3_TO_V3_1_DECISION_CHANGELOG.md` in th
 | D-33 | 24 Oct | TA approved the new official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic*; Field 1 and current documents updated; recorded in [docs/CHANGE_RECORD_D-33.md](docs/CHANGE_RECORD_D-33.md) |
 | D-34 | 24 Oct | **Repository only:** current GitHub collaborator status recorded (3 active write collaborators, 1 pending invitation); D-32 unchanged as history; [docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md) |
 | D-35 | 24 Oct | **Repository only:** branch protection on `main` configured and API-verified (real enforcement test not yet performed); team workflow approved ([CONTRIBUTING.md](CONTRIBUTING.md), pull request template); [docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md) |
+| D-36 | 24 Oct | **Repository only:** visibility changed from private to public after a public-release audit, authorized by the owner; history preserved; protection unchanged; [docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md) |
 
-New decisions continue from **D-36** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
+New decisions continue from **D-37** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
 
 ## 6. Where the history lives (not in this repository)
 
