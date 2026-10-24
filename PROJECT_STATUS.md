@@ -20,6 +20,8 @@ This is the **live status file**. Status lines inside the document blocks of `do
 | User interviews / validation studies | **NOT STARTED** | Market need is an unverified hypothesis (H-M) |
 | GitHub repository | **CREATED, PRIVATE (D-32, 23 Oct 2026)** | https://github.com/Amr-Heibaa/voice-to-sql-egyptian-arabic; visibility `PRIVATE` (re-confirmed 24 Oct 2026); branch `main`; initial commit `c05bd5a` ([docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md)); repository name unchanged by the D-33 title update |
 | GitHub collaborators | **3 ACTIVE (write) + 1 PENDING INVITATION** (D-34, read 24 Oct 2026) | Owner `Amr-Heibaa` (admin). Active with write access: `sayeddabdou`, `selimmmm7`, `abdallahjr111`. Pending, not yet accepted (no access yet): `GeorgeBassem-dev` (write offered; invited 23 Oct 2026 20:58 UTC). All invitations were sent from the owner account ([docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md)) |
+| Branch protection on `main` | **CONFIGURED, API-VERIFIED (D-35, 24 Oct 2026); enforcement NOT YET TESTED** | Pull request required; 1 approval from someone other than the author; stale approvals dismissed; conversations must be resolved; force pushes and deletion blocked; applies to administrators while configured (no bypass allowances; an administrator can still change the settings); no CI checks required yet. Settings read back through the GitHub REST and GraphQL APIs; no push to `main` has been attempted, so a real enforcement test has **not** been performed ([docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md)) |
+| Team workflow | **APPROVED (D-35, 24 Oct 2026)** | Feature branch → pull request → human code review → merge; rules for AI coding agents ([CONTRIBUTING.md](CONTRIBUTING.md)) |
 | License | **NONE** | No LICENSE file; licensing and ownership undecided; no rights granted |
 
 **Fixed V3.1 scope (unchanged):** one AI Central Hub with **three mandatory workspaces: Sales, Inventory and HR**; ambiguity-aware selective answering (BIR, Answer / Clarify / Abstain); **Egyptian-Arabic Voice → Arabic Text → English Text → English-to-SQL, with Arabic-anchored ambiguity checking**; safe read-only SQL; **AI Schema Design with Admin review** (approval publishes metadata only, never DDL).
@@ -70,7 +72,7 @@ Other pending items: ethics/consent review for recordings; optional permission r
 ## 5. Next steps
 
 1. **Student:** fill and personally submit the official MIU registration form using [docs/REGISTRATION_FORM_FIELDS.md](docs/REGISTRATION_FORM_FIELDS.md) and the v6 image.
-2. **Repository:** done. The private GitHub repository was created and pushed after independent review (D-32). Collaborators are managed by the owner; the current state is recorded in D-34.
+2. **Repository:** done. The private GitHub repository was created and pushed after independent review (D-32). Collaborators are managed by the owner; the current state is recorded in D-34. Since D-35, `main` is protected: every change goes through a pull request approved by someone other than its author ([CONTRIBUTING.md](CONTRIBUTING.md)). A controlled enforcement test is still open.
 3. **Implementation:** does not start until separately authorized. The planned sequence is SPECIFICATION.md §20 (Phase 1: repo architecture, PostgreSQL demo schema, read-only privilege tests before any LLM is connected).
 
 ## 6. Update rule

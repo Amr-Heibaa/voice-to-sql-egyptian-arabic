@@ -56,7 +56,7 @@ The canonical documents in `docs/` embed approved package text in marked blocks:
 To keep them traceable:
 
 1. **Propose before editing.** Give the file, section, old text and new text, and wait for the user's explicit approval. Never edit a marked block on your own initiative.
-2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-35**; record who authorized it.
+2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-36**; record who authorized it.
 3. Status-only changes go to [PROJECT_STATUS.md](PROJECT_STATUS.md) first.
 4. Keep exactly one canonical document per topic. Do not add `SPEC_v2.md`, `*_old.md`, `*_final_final.md` or copies of archive files.
 
@@ -71,4 +71,5 @@ To keep them traceable:
 - The repository is **private by design** and has **no license**: licensing and ownership are undecided. Do not add a LICENSE file, make the repository public or suggest that the project owns or may redistribute third-party datasets.
 - Do not initialize Git, create remotes, commit, push, publish, open pull requests or change repository settings without the user's explicit instruction for that step.
 - Never rewrite published history or force-push.
+- `main` is protected (D-35). Never push to `main`: work on a feature branch and open a pull request as described in [CONTRIBUTING.md](CONTRIBUTING.md). A merge needs one approval from a human other than the author. An AI agent never approves or merges a pull request, and the human who opens a pull request is responsible for all AI-generated content in it.
 - Line endings are normalized to LF by [.gitattributes](.gitattributes) so the recorded block hashes stay valid; the PNG is binary.
