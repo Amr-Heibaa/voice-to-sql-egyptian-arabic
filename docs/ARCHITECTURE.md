@@ -1,4 +1,4 @@
-# V3.1 Architecture and Governance Contract — Voice-to-SQL in Egyptian Arabic
+# V3.1 Architecture and Governance Contract — ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic
 
 > **Repository note (23 Oct 2026).** This file joins two current architecture documents from the final registration package. Both are **D-31 amended derivatives** (references and one misleading table heading changed; no architecture decision changed); see [CHANGE_RECORD_D-31.md](CHANGE_RECORD_D-31.md).
 >

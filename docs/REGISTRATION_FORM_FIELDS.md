@@ -1,23 +1,23 @@
 # Final Registration Form Fields (V3.1) — NOT SUBMITTED
 
-> **Repository note (23 Oct 2026).** The block below records the final copy-paste text of the six MIU registration-form fields.
+> **Repository note (updated 24 Oct 2026).** The block below records the final copy-paste text of the six MIU registration-form fields.
 >
 > - **Source:** `FINAL_FORM_COPY_PASTE.md` in the final export folder (generated unchanged from `04_FORM_PREPARATION_NOT_SUBMITTED/MIU_FORM_V3_1_DRAFT_NOT_SUBMITTED.md` in `MIU_VoiceToSQL_V3_1_FINAL_REGISTRATION_READY_2026-10-23.zip`, which is not included in this repository). **Original source SHA-256:** `157d641e856a4602f2f717f306865c1eb8fef2fb773f6a7fe9a362c20a36f804`.
-> - **This is an amended derivative, not a byte-identical copy:** D-31 changed only two explanatory lines **outside** the field boxes (see [CHANGE_RECORD_D-31.md](CHANGE_RECORD_D-31.md)). **The text inside all six field boxes is byte-identical to the source** and is verified box by box. **Derivative SHA-256:** `ec89264912b95773804fb366c83ef207db33b50fb5e59826f3fc8aa91e379a61`.
-> - **All six fields are final** (title TA-approved; Abstract student-confirmed final; Fields 4–5 student-confirmed final; Scope team-approved; diagram team- and supervisor-approved). **The university form has NOT been submitted**; the student submits it personally.
+> - **This is an amended derivative, not a byte-identical copy.** D-31 changed two explanatory lines outside the field boxes ([CHANGE_RECORD_D-31.md](CHANGE_RECORD_D-31.md)). **D-33** (24 Oct 2026) replaced the **Field 1** value with the TA-approved official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic* and updated the header line ([CHANGE_RECORD_D-33.md](CHANGE_RECORD_D-33.md)). **The text inside the field boxes for Fields 2–6 is byte-identical to the source** and is verified box by box. **Derivative SHA-256:** `9a5eb9b44459c1330baff9b3a3eb698f263f7d2e03a9a56148f06f9edb28233f`.
+> - **All six fields are final** (title TA-approved, D-33; Abstract student-confirmed final; Fields 4–5 student-confirmed final; Scope team-approved; diagram team- and supervisor-approved). **The university form has NOT been submitted**; the student submits it personally.
 > - The **Abstract (Field 2) must never be rewritten**, shortened, expanded or translated.
 
-<!-- BEGIN AMENDED DERIVATIVE source="FINAL_FORM_COPY_PASTE.md" source_sha256="157d641e856a4602f2f717f306865c1eb8fef2fb773f6a7fe9a362c20a36f804" derivative_sha256="ec89264912b95773804fb366c83ef207db33b50fb5e59826f3fc8aa91e379a61" amendment="D-31" -->
+<!-- BEGIN AMENDED DERIVATIVE source="FINAL_FORM_COPY_PASTE.md" source_sha256="157d641e856a4602f2f717f306865c1eb8fef2fb773f6a7fe9a362c20a36f804" derivative_sha256="9a5eb9b44459c1330baff9b3a3eb698f263f7d2e03a9a56148f06f9edb28233f" amendment="D-31,D-33" -->
 # MIU Registration Form — Final Copy-Paste Values
 
-**Voice-to-SQL in Egyptian Arabic** · V3.1 · 23 October 2026 · Registration status: **NOT SUBMITTED**
+**ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic** · V3.1 · 23 October 2026 (Field 1 updated 24 October 2026, D-33) · Registration status: **NOT SUBMITTED**
 
-Copy only the text inside each box. Every value is extracted unchanged from the registration package's form draft (`04_FORM_PREPARATION_NOT_SUBMITTED/MIU_FORM_V3_1_DRAFT_NOT_SUBMITTED.md`, not included in this repository).
+Copy only the text inside each box. Every value is extracted unchanged from the registration package's form draft (`04_FORM_PREPARATION_NOT_SUBMITTED/MIU_FORM_V3_1_DRAFT_NOT_SUBMITTED.md`, not included in this repository), except Field 1, which was updated on 24 October 2026 to the newly TA-approved title (D-33); the package draft still holds the earlier title.
 
 ## Field 1 — Project Title
 
 ```text
-Voice-to-SQL in Egyptian Arabic
+ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic
 ```
 
 ## Field 2 — Project Description (Abstract)

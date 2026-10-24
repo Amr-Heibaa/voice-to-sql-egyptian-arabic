@@ -1,4 +1,4 @@
-# Project Evolution — Voice-to-SQL in Egyptian Arabic
+# Project Evolution — ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic
 
 This file explains **how the project reached V3.1** so that a teammate or AI agent understands why the current design looks the way it does. The historical V2 and V3-draft documents are deliberately **not** copied into this repository. They remain unchanged, with SHA-256 checksums, in the registration package (§6).
 
@@ -18,8 +18,9 @@ This file explains **how the project reached V3.1** so that a teammate or AI age
 | Abstract, title and Fields 4–5 finalized | 23 Oct 2026 | TA-approved short Abstract inserted verbatim and confirmed final by the student (D-26, D-27). Title: the student kept *Voice-to-SQL in Egyptian Arabic* (D-28) and the **TA approved it** (D-29). Fields 4–5 confirmed after the AraSpider licensing correction (D-30) | **All six registration fields final; form NOT submitted** |
 | Final export and independent audit | 23 Oct 2026 | Final registration ZIP exported (33 tracked files + manifest, all verified) together with `FINAL_FORM_COPY_PASTE.md`; independent final package audit completed | Basis of this repository |
 | Clean V3.1 repository (this repo) | 23 Oct 2026 | Phase 1: local staging of a V3.1-only repository whose canonical documents embed the approved package text with SHA-256 provenance | No Git repository, commit, remote or push |
-| Private GitHub repository (D-32) | 23 Oct 2026 | Phase 2: after an independent review approved the D-31 staging ZIP, Git was initialized on `main`, the approved files were committed and pushed to the new **private** repository `Amr-Heibaa/voice-to-sql-egyptian-arabic`; visibility and file tree verified | No change to project content; registration NOT SUBMITTED |
 | Repository corrections (D-31) | 23 Oct 2026 | Phase 1.5: stale status wording and references to files outside the repository corrected in the repository copies (marked as amended derivatives; original hashes kept); the registration package itself is unchanged | No change to scope, title, Abstract, v6, architecture or evaluation methodology |
+| Private GitHub repository (D-32) | 23 Oct 2026 | Phase 2: after an independent review approved the D-31 staging ZIP, Git was initialized on `main`, the approved files were committed and pushed to the new **private** repository `Amr-Heibaa/voice-to-sql-egyptian-arabic`; visibility and file tree verified | No change to project content; registration NOT SUBMITTED |
+| Official title update (D-33) | 24 Oct 2026 | The TA explicitly approved the new official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic* (as reported by the student); Form Field 1 and all current documents updated; earlier titles kept as history | Abstract, Fields 2–6, scope, datasets, evaluation and v6 unchanged; repository name unchanged; registration NOT SUBMITTED |
 
 ## 2. Title history
 
@@ -29,7 +30,8 @@ This file explains **how the project reached V3.1** so that a teammate or AI age
 | V3 draft (candidate) | *Governed AI Data Hub: Egyptian-Arabic Voice-to-SQL and AI-Assisted Database Schema Design* | Not adopted |
 | V3.1 long title (D-19) | *Voice-to-SQL in Egyptian Arabic with Ambiguity-Aware Selective Answering: A Multi-Department AI Data Hub with Admin-Reviewed Schema Design* | The TA asked for a shorter title (D-20); kept in the spec only as the working name |
 | Short options A/B (D-20) | *Ambiguity-Aware Egyptian-Arabic Voice-to-SQL for Multi-Department Business Analytics* / *Egyptian-Arabic Voice-to-SQL with Ambiguity-Aware Selective Answering* | Not selected (D-28) |
-| **Final (D-29)** | ***Voice-to-SQL in Egyptian Arabic*** | **TA approved.** The short title does not narrow the scope |
+| D-29 (23 Oct 2026) | *Voice-to-SQL in Egyptian Arabic* | TA approved; the official title until 24 Oct 2026; **superseded by D-33** |
+| **Current (D-33, 24 Oct 2026)** | ***ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic*** | **TA approved** (as reported by the student). The title does not change the scope |
 
 ## 3. Architecture evolution
 
@@ -70,6 +72,7 @@ V3.1 (current):
 | Generic metric definitions | Semantic-eligible denominators, Unsafe Direct Answer Rate, separate Security suite, translation and semantic-vs-SQL error metrics | Methodological corrections (D-16, D-24) |
 | 253-word Abstract | 213-word TA-approved short Abstract, final | TA feedback, student confirmation (D-21, D-26, D-27) |
 | Diagram pending a professor reference | v6 approved by team and supervisor | D-11, D-14, D-18 |
+| Short title *Voice-to-SQL in Egyptian Arabic* (D-29) | *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic* (D-33) | TA approval of a new official title, 24 Oct 2026 |
 
 **Superseded and not carried forward:** the V2 retail-only form text, the V3-draft form and its candidate title, the 253-word Abstract, title options A/B, the Figma Make prompt and the user-supplied style-reference image (historical inputs that produced v6; the reference depicts a different, older project and is never a content source), and the pre-sync package ZIP.
 
@@ -112,8 +115,9 @@ Condensed from `02_CURRENT_SPECIFICATION/V3_TO_V3_1_DECISION_CHANGELOG.md` in th
 | D-31 | 23 Oct | **Repository only:** clean-repository documentation corrections (stale DS-11 status, V2 form filename, status wording, references to excluded files); 35 exact edits, recorded in [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md) |
 
 | D-32 | 23 Oct | **Repository only:** private GitHub repository created and initial commit pushed after independent review; recorded in [docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md) |
+| D-33 | 24 Oct | TA approved the new official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic*; Field 1 and current documents updated; recorded in [docs/CHANGE_RECORD_D-33.md](docs/CHANGE_RECORD_D-33.md) |
 
-New decisions continue from **D-33** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
+New decisions continue from **D-34** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
 
 ## 6. Where the history lives (not in this repository)
 

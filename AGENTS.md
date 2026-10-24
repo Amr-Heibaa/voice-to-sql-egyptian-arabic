@@ -1,6 +1,6 @@
 # AGENTS.md — Rules for AI Agents and Contributors
 
-Project: **Voice-to-SQL in Egyptian Arabic** (MIU Software Engineering graduation project), V3.1 team-approved planning baseline.
+Project: **ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic** (MIU Software Engineering graduation project), V3.1 team-approved planning baseline.
 
 These rules apply to every AI agent (Claude Code, Codex, ChatGPT, Copilot and others) and every human contributor working in this repository.
 
@@ -16,7 +16,7 @@ These rules apply to every AI agent (Claude Code, Codex, ChatGPT, Copilot and ot
 
 ## 2. Current stage
 
-- Official title *Voice-to-SQL in Egyptian Arabic*: **TA approved**. Abstract: **student-confirmed final**. All six registration form fields: **finalized**.
+- Official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic*: **TA approved** (D-33). Abstract: **student-confirmed final**. All six registration form fields: **finalized**.
 - University registration: **NOT SUBMITTED**. Formal committee approval of the expanded scope: **not obtained**.
 - Implementation: **NOT STARTED**. Custom datasets and recordings: **PLANNED, not collected**. Evaluation: **NOT STARTED**.
 - **Do not start coding, generating data or creating infrastructure unless the user explicitly authorizes that task.** Planning, reviewing and drafting are fine.
@@ -24,7 +24,7 @@ These rules apply to every AI agent (Claude Code, Codex, ChatGPT, Copilot and ot
 
 ## 3. Non-negotiable project rules
 
-1. **Exact title:** *Voice-to-SQL in Egyptian Arabic* (TA approved). Do not add a suffix unless the university requires one; do not rename the project.
+1. **Exact title:** *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic* (TA approved, D-33, 24 Oct 2026). The earlier title *Voice-to-SQL in Egyptian Arabic* (D-29) is history only. Do not add a suffix unless the university requires one; do not rename the project, and do not rename the GitHub repository `voice-to-sql-egyptian-arabic` without explicit approval.
 2. **The Abstract is frozen.** The text between the `BEGIN VERBATIM ABSTRACT` markers in [README.md](README.md) and Field 2 of [docs/REGISTRATION_FORM_FIELDS.md](docs/REGISTRATION_FORM_FIELDS.md) must never be rewritten, shortened, expanded or translated.
 3. **The v6 diagram is frozen.** Never redesign, regenerate, edit, compress or replace `assets/System-Overview-3840x2160-v6.png` (SHA-256 `62d3743e297e5eba7c0ea0e062643c7f756291777911942b73e1e2bddd280653`). Changing it needs new supervisor approval.
 4. **Full V3.1 scope stays intact:** Sales, Inventory and HR are all mandatory functioning workspaces; ambiguity-aware selective answering (BIR, ambiguity detection, Answer / Clarify / Abstain); the TA-clarified English-to-SQL pipeline; safe read-only SQL; AI Schema Design with Admin approval. Do not silently drop, downgrade (for example, voice to typed-only) or expand the scope.
@@ -56,7 +56,7 @@ The canonical documents in `docs/` embed approved package text in marked blocks:
 To keep them traceable:
 
 1. **Propose before editing.** Give the file, section, old text and new text, and wait for the user's explicit approval. Never edit a marked block on your own initiative.
-2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-33**; record who authorized it.
+2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-34**; record who authorized it.
 3. Status-only changes go to [PROJECT_STATUS.md](PROJECT_STATUS.md) first.
 4. Keep exactly one canonical document per topic. Do not add `SPEC_v2.md`, `*_old.md`, `*_final_final.md` or copies of archive files.
 

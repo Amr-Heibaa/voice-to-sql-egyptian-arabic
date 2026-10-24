@@ -1,4 +1,4 @@
-# V3.1 Evaluation Plan — Voice-to-SQL in Egyptian Arabic
+# V3.1 Evaluation Plan — ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic
 
 > **Repository note (staging, 23 Oct 2026).** This file has two parts.
 >

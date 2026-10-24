@@ -1,4 +1,4 @@
-# V3.1 Dataset Strategy — Voice-to-SQL in Egyptian Arabic
+# V3.1 Dataset Strategy — ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic
 
 > **Repository note (23 Oct 2026).** The block below is the **team-approved dataset strategy** (DS-1–DS-8 approved 22 Oct 2026; DS-11 synchronized 23 Oct 2026).
 >
