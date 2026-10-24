@@ -12,6 +12,7 @@ There is exactly **one canonical document per topic**. Each embeds approved text
 | [CHANGE_RECORD_D-31.md](CHANGE_RECORD_D-31.md) | Every D-31 correction with reason and exact before/after text | Record |
 | [CHANGE_RECORD_D-32.md](CHANGE_RECORD_D-32.md) | Private GitHub repository creation (no content change) | Record |
 | [CHANGE_RECORD_D-33.md](CHANGE_RECORD_D-33.md) | TA-approved official title update (D-33), exact before/after text | Record |
+| [CHANGE_RECORD_D-34.md](CHANGE_RECORD_D-34.md) | GitHub collaborator status (D-34; no content change) | Record |
 
 **If two documents ever disagree,** SPECIFICATION.md wins for scope and design, [PROJECT_STATUS.md](../PROJECT_STATUS.md) wins for current status, and the conflict must be reported (AGENTS.md §1).
 
