@@ -15,7 +15,7 @@
 
 Details and approvals: [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
-> This **private** repository currently holds **planning documentation only**: the approved V3.1 specification, architecture, dataset strategy, evaluation plan, final registration-form text and the approved system-overview diagram. It contains no source code, no data, no recordings and no results. Nothing described here should be read as implemented, collected, measured or committee-approved.
+> This **public** repository (public since 24 Oct 2026, D-36) currently holds **planning documentation only**: the approved V3.1 specification, architecture, dataset strategy, evaluation plan, final registration-form text and the approved system-overview diagram. It contains no source code, no data, no recordings and no results. Nothing described here should be read as implemented, collected, measured or committee-approved.
 
 ## Abstract
 
@@ -88,6 +88,7 @@ Egyptian-Arabic voice or text
 | [docs/CHANGE_RECORD_D-33.md](docs/CHANGE_RECORD_D-33.md) | D-33 TA-approved official title update, every edit with before/after text |
 | [docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md) | D-34 current GitHub collaborator status (active vs pending) |
 | [docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md) | D-35 branch protection on `main` (configured, API-verified, enforcement not yet tested) and team workflow |
+| [docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md) | D-36 repository visibility changed from private to public: audit, API evidence, protection after the change, remaining risks |
 | [docs/SPECIFICATION.md](docs/SPECIFICATION.md) | **Canonical V3.1 specification (source of truth)** |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Architecture, demonstration contract and read-only/Admin governance contract |
 | [docs/DATASET_STRATEGY.md](docs/DATASET_STRATEGY.md) | Team-approved dataset strategy (DS-1–DS-8, DS-11) |
@@ -101,5 +102,5 @@ The project does **not** claim novelty for Text-to-SQL, AI schema generation, se
 
 ## License, ownership and third-party data
 
-- **No license is granted.** The repository is private by design, and licensing and ownership of the project materials are **undecided**. Until the team decides, no permission to use, copy, modify or distribute these materials is given.
+- **No license is granted.** The repository is public (D-36), but public visibility is not a license. Licensing and ownership of the project materials are **undecided**. Apart from viewing and forking on GitHub under GitHub's Terms of Service, no permission to use, copy, modify or distribute these materials is given until the team decides.
 - **Third-party datasets** (Spider, BIRD Mini-Dev, Gretel, AraSpider, Casablanca, UCI Online Retail II, Contoso and the research benchmarks named in the docs) are **referenced only**. None of them is included in or redistributed through this repository, and the project claims no ownership of them or redistribution rights over them. Each keeps its own license and terms (docs/DATASET_STRATEGY.md §11).

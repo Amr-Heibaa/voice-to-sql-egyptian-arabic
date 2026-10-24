@@ -56,7 +56,7 @@ The canonical documents in `docs/` embed approved package text in marked blocks:
 To keep them traceable:
 
 1. **Propose before editing.** Give the file, section, old text and new text, and wait for the user's explicit approval. Never edit a marked block on your own initiative.
-2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-36**; record who authorized it.
+2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-37**; record who authorized it.
 3. Status-only changes go to [PROJECT_STATUS.md](PROJECT_STATUS.md) first.
 4. Keep exactly one canonical document per topic. Do not add `SPEC_v2.md`, `*_old.md`, `*_final_final.md` or copies of archive files.
 
@@ -68,7 +68,8 @@ To keep them traceable:
 
 ## 7. Git and GitHub
 
-- The repository is **private by design** and has **no license**: licensing and ownership are undecided. Do not add a LICENSE file, make the repository public or suggest that the project owns or may redistribute third-party datasets.
+- The repository is **public** (D-36, 24 Oct 2026) and has **no license**: licensing and ownership are undecided, and public visibility is not a license. Do not add a LICENSE file, change the repository visibility or suggest that the project owns or may redistribute third-party datasets.
+- Everything pushed, including commit metadata (author names and e-mail addresses), is visible to anyone and may be copied by forks. Check §4 before every commit, and use GitHub's private no-reply e-mail address for commits.
 - Do not initialize Git, create remotes, commit, push, publish, open pull requests or change repository settings without the user's explicit instruction for that step.
 - Never rewrite published history or force-push.
 - `main` is protected (D-35). Never push to `main`: work on a feature branch and open a pull request as described in [CONTRIBUTING.md](CONTRIBUTING.md). A merge needs one approval from a human other than the author. An AI agent never approves or merges a pull request, and the human who opens a pull request is responsible for all AI-generated content in it.
