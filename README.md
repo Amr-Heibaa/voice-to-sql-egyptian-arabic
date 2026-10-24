@@ -80,11 +80,14 @@ Egyptian-Arabic voice or text
 | [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md) | How the project evolved from the original concept through V2 and V3 to V3.1, with the decision index |
 | [AGENTS.md](AGENTS.md) | Rules for AI agents and contributors (read before changing anything) |
 | [CLAUDE.md](CLAUDE.md) | Claude Code entry point (imports AGENTS.md) |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Team workflow: feature branch → pull request → human code review → merge; rules for AI coding agents |
+| [.github/pull_request_template.md](.github/pull_request_template.md) | Pull request checklist: scope, testing, documentation, security and data, AI assistance disclosure |
 | [docs/README.md](docs/README.md) | Documentation index, provenance (SHA-256) and package path map |
 | [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md) | D-31 repository corrections, every edit with before/after text |
 | [docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md) | D-32 private GitHub repository creation and its verification |
 | [docs/CHANGE_RECORD_D-33.md](docs/CHANGE_RECORD_D-33.md) | D-33 TA-approved official title update, every edit with before/after text |
 | [docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md) | D-34 current GitHub collaborator status (active vs pending) |
+| [docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md) | D-35 branch protection on `main` (configured, API-verified, enforcement not yet tested) and team workflow |
 | [docs/SPECIFICATION.md](docs/SPECIFICATION.md) | **Canonical V3.1 specification (source of truth)** |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Architecture, demonstration contract and read-only/Admin governance contract |
 | [docs/DATASET_STRATEGY.md](docs/DATASET_STRATEGY.md) | Team-approved dataset strategy (DS-1–DS-8, DS-11) |
