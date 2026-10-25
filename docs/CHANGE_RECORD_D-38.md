@@ -112,6 +112,22 @@ The D-37 suite needed no change. The D-38 copy adds only new checks and weakens 
 
 No CI ran: none exists.
 
+## 8a. Corrections after the owner's independent review (25 Oct 2026)
+
+Applied as a second commit on the same branch and draft pull request (#4), by `_staging_tools/apply_d38_review.js` (outside the repository):
+
+| File | Correction |
+|---|---|
+| `docs/proposal/README.md` | The status line no longer says implementation is out of scope for Sprint 0: the full implementation is outside this milestone, but the minimal 10% PoC is one of the three mandatory deliverables. PDF storage rule |
+| `docs/poc/INTERFACE_CONTRACT_DRAFT.md` | Every JSON example carries `"contract_version": "0.1-draft"`; the draft → `1.0` (Gate G-A) → `1.1+` convention is stated. Proposed clarification binding (`clarification_id`, `trace_id`, session), expiry (`expires_at`, TTL fixed at G-A) and single-use, no-replay rules, with two error codes and two test rows. Still DRAFT; nothing implemented |
+| `docs/TEAM_START_HERE.md` | The short pipeline now shows the Arabic-grounded BIR and ambiguity detection, Answer / Clarify / Abstain, and SQL generation only after ANSWER, matching [SPECIFICATION.md](SPECIFICATION.md) §8.1. PDF storage rule in the public/private table and the never-commit list |
+| `docs/proposal/SLR_PROTOCOL_DRAFT.md` | PDF storage rule in full-text screening and the reproducibility record |
+| `docs/CHANGE_RECORD_D-38.md` | This section |
+
+**PDF storage rule:** a research PDF goes into the private University Drive only when its access and sharing terms permit it. Otherwise the team stores the DOI or link, the bibliographic metadata, extraction notes and permitted references. PDFs never go into this repository.
+
+No Jira deadline or task was changed. The canonical specification, the v6 diagram, D-37 history, the CQP task map and ownership, the 15 slides and the three deliverables are unchanged. Both verification suites were re-run after these corrections with the same results as in §8 (103 PASS for the D-37 suite; 149 PASS for the D-38 suite; 0 FAIL).
+
 ## 9. Outstanding decisions and recommendations
 
 1. **PoC code location** (S0-D1): public repository or a private one. Owner decision.

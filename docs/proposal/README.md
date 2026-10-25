@@ -2,7 +2,7 @@
 
 This folder holds the **planning documents** for the MIU graduation **proposal paper**: a structured Systematic Literature Review (SLR), five Research Questions (RQ1–RQ5) and a detailed Proposed Solution. It is **Deliverable 1 of 3** for the Proposal Discussion ([../SPRINT_0.md](../SPRINT_0.md)). It was added by decision **D-37** ([../CHANGE_RECORD_D-37.md](../CHANGE_RECORD_D-37.md)) and re-pointed to the current Jira project `CQP` by **D-38** ([../CHANGE_RECORD_D-38.md](../CHANGE_RECORD_D-38.md)).
 
-> **Status (25 Oct 2026):** planning only. No search has been run, no study has been screened or included, no PRISMA count, quality score or table value exists yet, and no section of the paper has been written. Implementation of ClearQuery is **NOT STARTED** and is out of scope for Sprint 0.
+> **Status (25 Oct 2026):** planning only. No search has been run, no study has been screened or included, no PRISMA count, quality score or table value exists yet, and no section of the paper has been written. Implementation of ClearQuery is **NOT STARTED**. The **full** graduation-project implementation is outside this milestone, but a minimal working **10% Proof of Concept** is one of the three mandatory Sprint 0 deliverables ([../SPRINT_0.md](../SPRINT_0.md#1-the-three-university-deliverables), [../poc/POC_KICKOFF.md](../poc/POC_KICKOFF.md)).
 
 ## Milestones
 
@@ -29,7 +29,7 @@ This folder holds the **planning documents** for the MIU graduation **proposal p
 ## Where the work happens
 
 - **Jira (primary):** every task has a self-contained description with step-by-step instructions and a task-specific **AI execution prompt** to copy into a new AI session. Find your tasks in the task map in [../SPRINT_0.md](../SPRINT_0.md#4-task-map). The detailed prompts live only in Jira, so they are not duplicated here.
-- **Private team folder:** research outputs (search exports, screening logs, extraction sheets, drafts) go to the team's private **University Drive** (decided 25 Oct 2026; the folder and its access settings are still pending, Amr). Downloaded papers, the university template and any restricted material never go into this public repository.
+- **Private team folder:** research outputs (search exports, screening logs, extraction sheets, drafts) go to the team's private **University Drive** (decided 25 Oct 2026; the folder and its access settings are still pending, Amr). Store a paper PDF in the University Drive **only when its access and sharing terms permit it** (for example an open-access licence, or publisher or MIU/EKB terms that allow sharing within the team). Otherwise store only the DOI or link, the bibliographic metadata, your extraction notes and permitted references. PDFs never go into this public repository. The university template and any other restricted material never go into this public repository either.
 - **Private Overleaf project:** the final paper is integrated by the team in the university's private Overleaf template. The template and its link are never shared with AI tools or committed here.
 - **This repository:** planning documents and, with the owner's approval through a pull request, agreed public-safe artefacts (for example the final protocol or the gap-to-solution matrix).
 

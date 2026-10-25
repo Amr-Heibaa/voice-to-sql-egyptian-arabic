@@ -76,7 +76,7 @@ Each database search is logged with the exact string, date, field restrictions, 
 1. **Identification:** run the logged searches; add "other sources" separately.
 2. **Deduplication:** by DOI first, then normalised title + first author + year; record the number removed.
 3. **Title/abstract screening:** two screeners where possible; record both decisions, the final decision and the exclusion code.
-4. **Full-text screening:** obtain texts legally (MIU/EKB, open access, author copies); record E6 when a text is unavailable.
+4. **Full-text screening:** obtain texts legally (MIU/EKB, open access, author copies); record E6 when a text is unavailable. Store a paper PDF in the University Drive **only when its access and sharing terms permit it** (for example an open-access licence, or publisher or MIU/EKB terms that allow sharing within the team). Otherwise store only the DOI or link, the bibliographic metadata, your extraction notes and permitted references. PDFs never go into this public repository.
 5. **Quality assessment:** with the [quality template](templates/QUALITY_ASSESSMENT_TEMPLATE.csv) (`CQP-4` rubric, applied in `CQP-13`); record any E8 exclusion.
 6. **PRISMA 2020-style diagram:** computed only from the log (`CQP-12`, following the `CQP-6` protocol).
 
@@ -100,4 +100,4 @@ Extraction uses [templates/EVIDENCE_TRACKER_TEMPLATE.csv](templates/EVIDENCE_TRA
 
 ## 9. Reproducibility record
 
-The final protocol, the search log and the export files are kept in the team's private folder. The final protocol (no copyrighted full texts) may be proposed for this repository through a pull request.
+The final protocol, the search log and the export files are kept in the team's private University Drive; paper PDFs are kept there only when their access and sharing terms permit it, otherwise as DOI links, bibliographic metadata and extraction notes. The final protocol (no copyrighted full texts) may be proposed for this repository through a pull request.

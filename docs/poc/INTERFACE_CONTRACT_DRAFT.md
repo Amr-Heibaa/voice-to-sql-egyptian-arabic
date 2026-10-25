@@ -9,7 +9,10 @@ Design sources: [../SPECIFICATION.md](../SPECIFICATION.md) ยง8.1 (processing ord
 ## 1. General conventions (proposed)
 
 - **`trace_id`**: one opaque identifier created when a question is submitted and carried, unchanged, by every object below. Every log line and every trace-panel entry includes it.
-- **`contract_version`**: every object carries `"contract_version": "1.0"` after the gate; a mismatch is an error, not a silent fallback.
+- **`contract_version`**: every object carries a `contract_version`, and a component rejects any version it was not built for (`CONTRACT_VERSION_MISMATCH`), never a silent fallback. Version convention:
+  - `"0.1-draft"`, `"0.2-draft"`, โ€ฆ: drafts under discussion. Every example in this file uses `"0.1-draft"`.
+  - `"1.0"`: assigned in one step at **Gate G-A**, when the four component owners have commented "Contract v1.0 agreed" on `CQP-22`. The agreed text is then re-labelled `"1.0"`, with no other change.
+  - `"1.1"`, `"1.2"`, โ€ฆ: later changes, each a versioned note on `CQP-22` announced to the affected owners before any component uses it.
 - **Language fields**: `_ar` fields hold Arabic text, `_en` fields English text.
 - **Department**: the PoC has one workspace, `sales`. The value comes from server-side configuration, **never** from model output ([../SPECIFICATION.md](../SPECIFICATION.md) ยง8.3).
 - **Examples** use synthetic values only.
@@ -30,6 +33,7 @@ Design sources: [../SPECIFICATION.md](../SPECIFICATION.md) ยง8.1 (processing ord
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
   "audio_id": "a-0001",
   "transcript_ar_raw": "<ASR output>",
@@ -45,6 +49,7 @@ Design sources: [../SPECIFICATION.md](../SPECIFICATION.md) ยง8.1 (processing ord
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
   "text_ar_original": "<question_ar, unchanged>",
   "text_en": "<derived English translation>",
@@ -61,6 +66,7 @@ A subset of the illustrative BIR in [../SPECIFICATION.md](../SPECIFICATION.md) ย
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
   "department_id": "sales",
   "intent_type": "rank",
@@ -83,9 +89,12 @@ A subset of the illustrative BIR in [../SPECIFICATION.md](../SPECIFICATION.md) ย
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
   "type": "CLARIFY",
   "reason": "METRIC_UNRESOLVED",
+  "clarification_id": "c-0001",
+  "expires_at": "<ISO timestamp>",
   "clarification_question_ar": "<one targeted question>",
   "options": [
     {"slot": "metric", "value": "revenue", "label_ar": "<label>"},
@@ -100,7 +109,9 @@ A subset of the illustrative BIR in [../SPECIFICATION.md](../SPECIFICATION.md) ย
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
+  "clarification_id": "c-0001",
   "slot": "metric",
   "chosen_option": "revenue"
 }
@@ -108,8 +119,13 @@ A subset of the illustrative BIR in [../SPECIFICATION.md](../SPECIFICATION.md) ย
 
 State rules:
 
-- At most **one** clarification turn per question. The server keeps the pending BIR keyed by `trace_id`.
-- The choice must be one of the offered options; anything else is an error.
+Proposed state rules (draft; nothing here is implemented):
+
+- At most **one** clarification turn per question.
+- **Binding.** A CLARIFY decision creates one server-side pending-clarification record holding the `clarification_id`, the `trace_id`, the demo session that asked the question (or the authenticated user, if the PoC has login), the pending BIR and the offered options. The UI never sends the BIR back; it sends only the identifiers and the choice.
+- **Validation.** A `ClarificationResponse` is accepted only when its `clarification_id` exists, belongs to the same `trace_id` and the same session, has not expired, and `chosen_option` is one of the stored options for that `slot`.
+- **Expiry.** The record expires at `expires_at`. The time-to-live (for example a few minutes) is fixed at Gate G-A. An expired clarification returns `CLARIFICATION_EXPIRED`; the user asks the question again, which starts a new `trace_id`.
+- **No replay.** The record is consumed by the first valid response and then deleted or marked used. A second response with the same `clarification_id`, or one from another session, returns `CLARIFICATION_INVALID` and changes nothing.
 - The choice updates the **same** BIR (`resolved_metric`), then the policy runs again. A second unresolved ambiguity ends in ABSTAIN (`CLARIFICATION_LIMIT`).
 - **No SQL is generated or executed while a clarification is pending.**
 
@@ -117,6 +133,7 @@ State rules:
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
   "department": "sales",
   "sql": "<one SELECT generated after ANSWER>"
@@ -125,6 +142,7 @@ State rules:
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
   "sql": "<the SQL as checked>",
   "validated": true,
@@ -142,6 +160,7 @@ When `validated` is `false`, the SQL was **not executed**, `rows` is empty and `
 
 ```json
 {
+  "contract_version": "0.1-draft",
   "trace_id": "t-0001",
   "decision": "ANSWER",
   "text_en": "<answer built from the returned rows>",
@@ -164,6 +183,8 @@ Every number in `text_en` or `text_ar` comes from `data_rows`. If the rows are e
 | `CATALOG_MISSING_TERM` | `CQP-24` | ABSTAIN (`UNSUPPORTED_METRIC`) or CLARIFY, per policy |
 | `SQL_REJECTED` | `CQP-26` | ABSTAIN (`UNSAFE_SQL`); the SQL is not executed |
 | `DB_TIMEOUT` / `DB_ERROR` | `CQP-26` | Visible error; no partial or guessed numbers |
+| `CLARIFICATION_INVALID` | `CQP-24` | Unknown, already used, wrong-session or invalid-option response: visible error; no SQL; state unchanged |
+| `CLARIFICATION_EXPIRED` | `CQP-24` | Visible message asking the user to ask again; no SQL |
 | `CONTRACT_VERSION_MISMATCH` | any | Visible error; stop |
 
 Any unexpected exception ends in a visible error or ABSTAIN, never in an answer.
@@ -181,7 +202,8 @@ Any unexpected exception ends in a visible error or ABSTAIN, never in an answer.
 |---|---|---|---|---|
 | A clear question | typed, voice | ANSWER | One validated SELECT; real rows | `CQP-22` matrix |
 | B ambiguous question, then a choice | typed, voice | CLARIFY โ’ ANSWER | No SQL before the choice | `CQP-22` matrix |
-| B with an invalid choice | typed | Error, then ABSTAIN | No SQL | `CQP-24` tests |
+| B with an invalid choice | typed | `CLARIFICATION_INVALID`; no answer | No SQL | `CQP-24` tests |
+| B answered twice, or after expiry | typed | `CLARIFICATION_INVALID` / `CLARIFICATION_EXPIRED` | No SQL; the first answer is not repeated | `CQP-24` tests |
 | C net profit without cost data | typed (voice SHOULD) | ABSTAIN `MISSING_DATA` | No SQL | `CQP-22` matrix |
 | Write request in Arabic | typed | ABSTAIN `WRITE_REQUEST` | No SQL; row counts unchanged | `CQP-24`, `CQP-27` |
 | Crafted `DELETE` / `DROP` / multi-statement SQL to the guard | direct | `validated: false` | Not executed; row counts unchanged | `CQP-26`, `CQP-27` |
