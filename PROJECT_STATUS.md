@@ -13,14 +13,16 @@ This is the **live status file**. Status lines inside the document blocks of `do
 | Six registration form fields | **FINALIZED** | All six fields are final (§2) |
 | University registration form | **SUBMITTED (25 Oct 2026)** | Submitted personally by the student; confirmed by the owner on 25 Oct 2026 (D-37). Submission is not acceptance: formal committee acceptance of the expanded scope is still pending (Q12) |
 | Formal committee approval of the expanded V3.1 scope | **NOT OBTAINED** | Open decision Q12; TA, professor and supervisor support is not committee registration |
-| Implementation (code, database, UI, models) | **NOT STARTED** | No codebase, no deployment, no stack or model selected (Q09) |
+| Implementation (code, database, UI, models) | **NOT STARTED** | No codebase, no deployment, no stack or model selected (Q09). A minimal Proof of Concept is **planned** in Sprint 0 (`CQP-22`–`CQP-26`); it is **not implemented** and its scope is an internal proposal pending supervisor confirmation ([docs/poc/POC_KICKOFF.md](docs/poc/POC_KICKOFF.md)) |
 | Custom datasets (synthetic company, benchmark, annotations, gold SQL) | **PLANNED, NOT COLLECTED** | Dataset generation has not started |
 | Voice recordings | **PLANNED, NOT COLLECTED** | Consent protocol and any required ethics review must come first |
 | Evaluation | **NOT STARTED** | No results of any kind exist |
 | User interviews / validation studies | **NOT STARTED** | Market need is an unverified hypothesis (H-M) |
-| Proposal paper (Sprint 0) | **PLANNING SET UP; RESEARCH NOT STARTED** (D-37, 25 Oct 2026) | Jira Epic `SCRUM-5` with 18 tasks in the active `SCRUM Sprint 0` (25 Oct – 8 Nov 2026); plan in [docs/proposal/](docs/proposal/README.md). No search, screening, table or paper section exists yet. The Proposal Discussion period starts on 10 Nov 2026 |
+| Sprint 0 — Proposal Discussion readiness | **PLANNED IN JIRA `CQP`; NOT STARTED** (D-38, 25 Oct 2026) | Current and authoritative: Jira project **ClearQuery - Graduation Project** (`CQP`, Business / Project Management), Workstream `CQP-1`, 25 tasks (`CQP-2`–`CQP-26`), 5 QA sub-tasks (`CQP-27`–`CQP-31`), 18 Blocks links, all To Do (read-only check, 25 Oct 2026). Three required deliverables: Proposal Document, 15-slide English Presentation, 10% PoC; none completed. The Proposal Discussion period starts on 10 Nov 2026. Index: [docs/SPRINT_0.md](docs/SPRINT_0.md) |
+| Previous proposal plan (D-37) | **SUPERSEDED** (D-38) | The old Jira project `SCRUM` (Epic `SCRUM-5`, 18 tasks, 5 QA subtasks, 38 links) is no longer authoritative for current planning; [docs/CHANGE_RECORD_D-37.md](docs/CHANGE_RECORD_D-37.md) stays as history |
+| Shared private workspace | **DECIDED: University Drive; SETUP PENDING** | Decided by the owner on 25 Oct 2026. The folder and its access settings are not yet created; no link is published here |
 | GitHub repository | **PUBLIC (D-36, 24 Oct 2026)** | https://github.com/Amr-Heibaa/voice-to-sql-egyptian-arabic; visibility `PUBLIC` since 24 Oct 2026 (about 16:48 UTC), changed by the owner's authorization after a public-release audit, Git history preserved ([docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md)). Created **private** on 23 Oct 2026 (D-32); branch `main`; initial commit `c05bd5a` ([docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md)); repository name unchanged by the D-33 title update |
-| GitHub collaborators | **4 ACTIVE (write)** (read 25 Oct 2026, D-37) | Owner `Amr-Heibaa` (admin). Active with write access: `sayeddabdou`, `selimmmm7`, `abdallahjr111`, `GeorgeBassem-dev`. The invitation to `GeorgeBassem-dev` recorded as pending in D-34 has since been accepted; there are no pending invitations. All invitations were sent from the owner account ([docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md)) |
+| GitHub collaborators | **4 ACTIVE (write)** (read 25 Oct 2026, D-37; re-read unchanged for D-38) | Owner `Amr-Heibaa` (admin). Active with write access: `sayeddabdou`, `selimmmm7`, `abdallahjr111`, `GeorgeBassem-dev`. The invitation to `GeorgeBassem-dev` recorded as pending in D-34 has since been accepted; there are no pending invitations. All invitations were sent from the owner account ([docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md)) |
 | Branch protection on `main` | **CONFIGURED, API-VERIFIED (D-35, 24 Oct 2026); enforcement NOT YET TESTED** | Pull request required; 1 approval from someone other than the author; stale approvals dismissed; conversations must be resolved; force pushes and deletion blocked; applies to administrators while configured (no bypass allowances; an administrator can still change the settings); no CI checks required yet. Settings read back through the GitHub REST and GraphQL APIs; no push to `main` has been attempted, so a real enforcement test has **not** been performed ([docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md)). Re-read after the change to public on 24 Oct 2026: unchanged ([docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md)) |
 | Team workflow | **APPROVED (D-35, 24 Oct 2026)** | Feature branch → pull request → human code review → merge; rules for AI coding agents ([CONTRIBUTING.md](CONTRIBUTING.md)) |
 | License | **NONE** | No LICENSE file; no open-source or other separate license adopted; licensing and ownership undecided. Public visibility (D-36) is not a license: GitHub's Terms of Service give GitHub users limited permissions through the service (for example, viewing and forking on GitHub), but the project grants no additional right to reuse, copy, modify or redistribute the materials |
@@ -68,13 +70,32 @@ Exact text: [docs/REGISTRATION_FORM_FIELDS.md](docs/REGISTRATION_FORM_FIELDS.md)
 | Q14 | P3 redefined as an English-only translation ablation | Optional; team confirmation pending |
 | Q15 | Should translation appear in the diagram? | Only if the TA or supervisor asks; never edit v6 without new supervisor approval |
 
+**Sprint 0 open decisions (D-38)**
+
+| ID | Open item | Current position |
+|---|---|---|
+| S0-D1 | Where PoC source code lives: this public repository or a separate private repository | **Open, owner decision.** `CQP-1` plans a private code repository; no repository has been created. Code is published here only with the owner's explicit approval |
+| S0-D2 | Supervisor confirmation of the proposed PoC scope (the university gives no "10%" checklist) | Pending (`CQP-22` Phase A) |
+| S0-D3 | PoC Interface Contract v1.0 | Draft only; frozen at Gate G-A (28 Oct 2026) by four owner comments on `CQP-22` |
+| S0-D4 | PoC stack, ASR, translation and LLM choices | Not selected (Q09); decided at or after Gate G-A |
+| S0-D5 | GitHub handles of Sayed and George | `sayeddabdou` and `GeorgeBassem-dev` are active collaborators, but their mapping to the members is not yet confirmed by the owner |
+| S0-D6 | University Drive folder and access settings | Pending (Amr) |
+| S0-D7 | Publishing direct Jira links in this public repository | Not approved; issue keys only |
+
 Other pending items: ethics/consent review for recordings; optional permission requests (MGB-3, ArzEn, RSchema authors); AceMB unconfirmed until its gated content is inspected.
 
 ## 5. Next steps
 
-1. **Registration form:** done; submitted on 25 Oct 2026 (owner-confirmed, D-37). Committee acceptance of the expanded scope is awaited. **Proposal paper:** complete Sprint 0 ([docs/proposal/SPRINT_0_PLAN.md](docs/proposal/SPRINT_0_PLAN.md)) before the Proposal Discussion period that starts on 10 Nov 2026.
+1. **Registration form:** done; submitted on 25 Oct 2026 (owner-confirmed, D-37). Committee acceptance of the expanded scope is awaited. **Sprint 0:** deliver the Proposal Document, the 15-slide English Presentation and the minimal PoC before the Proposal Discussion period that starts on 10 Nov 2026 ([docs/SPRINT_0.md](docs/SPRINT_0.md)). Internal checkpoints (targets, not university deadlines):
+   - 26–28 Oct: RQs, SLR protocol, extraction/quality and screening frameworks, PoC scope and Interface Contract.
+   - **28 Oct:** proposed PoC contract Gate G-A.
+   - **1 Nov:** text-only walking skeleton (Checkpoint C1).
+   - 4–7 Nov: PoC component integration and academic drafting.
+   - **8 Nov:** internal completion target.
+   - 9 Nov: rehearsal and contingency checks.
+   - **10 Nov:** the university Proposal Discussion period begins.
 2. **Repository:** done. The GitHub repository was created as private and pushed after independent review (D-32), and made public on 24 Oct 2026 after a public-release audit (D-36). Collaborators are managed by the owner; the current state is recorded in D-34. Since D-35, `main` is protected: every change goes through a pull request approved by someone other than its author ([CONTRIBUTING.md](CONTRIBUTING.md)). A controlled enforcement test is still open, and the GitHub repository description still uses the earlier title (D-36 open items).
-3. **Implementation:** does not start until separately authorized. The planned sequence is SPECIFICATION.md §20 (Phase 1: repo architecture, PostgreSQL demo schema, read-only privilege tests before any LLM is connected).
+3. **Implementation:** the full application does not start until separately authorized. The Sprint 0 PoC components (`CQP-23`–`CQP-26`) follow Gate G-A and the owner's decision on where the code lives (S0-D1). The planned sequence is SPECIFICATION.md §20 (Phase 1: repo architecture, PostgreSQL demo schema, read-only privilege tests before any LLM is connected).
 
 ## 6. Update rule
 

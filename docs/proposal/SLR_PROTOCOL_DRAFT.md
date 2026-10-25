@@ -1,6 +1,6 @@
 # Systematic Literature Review Protocol — DRAFT
 
-> **DRAFT. No search has been run.** This is the starting plan for Jira task **S0-02** ([SCRUM-7](https://miuegypt-team-e0iuh5ol.atlassian.net/browse/SCRUM-7), owner Sayed, reviewer Abdallah). Sayed's team will finalise the databases, exact queries, criteria and window. Every count, decision and score must later come from real, logged searches and screening. Nothing in this file is a finding.
+> **DRAFT. No search has been run.** This is the starting plan for Jira task **`CQP-3`** (owner Sayed; independent reproducibility check by Abdallah in QA-05, `CQP-31`; D-38. The superseded D-37 plan called this task S0-02 in the old `SCRUM` project). Sayed will finalise the databases, exact queries, criteria and window. Every count, decision and score must later come from real, logged searches and screening. Nothing in this file is a finding.
 
 ## 1. Review objective and questions
 
@@ -62,14 +62,14 @@ Each database search is logged with the exact string, date, field restrictions, 
 | E5 | Not in English |
 | E6 | Full text not available |
 | E7 | Insufficient technical evidence (no method, evaluation or data) |
-| E8 | Below the agreed quality threshold (from S0-04) |
+| E8 | Below the agreed quality threshold (from `CQP-4`, applied in `CQP-13`) |
 
 ## 5. Publication window, language and preprints
 
 - **Window:** the instructor suggested about 2021–2026. This is guidance, not a confirmed university rule. The protocol owner sets the window and records why.
 - **Foundational exceptions:** earlier works (for example widely used benchmarks) may be admitted only with a written justification per study, and they are reported as such.
 - **Language:** English full texts. Arabic-language studies may be noted as a limitation if they are excluded.
-- **Preprints:** proposed rule: include only when a peer-reviewed version exists (cite that version); otherwise exclude with E3, or report it separately as grey literature if the team agrees. The final rule is decided in S0-02.
+- **Preprints:** proposed rule: include only when a peer-reviewed version exists (cite that version); otherwise exclude with E3, or report it separately as grey literature if the team agrees. The final rule is decided in `CQP-3`.
 
 ## 6. Study selection
 
@@ -77,10 +77,10 @@ Each database search is logged with the exact string, date, field restrictions, 
 2. **Deduplication:** by DOI first, then normalised title + first author + year; record the number removed.
 3. **Title/abstract screening:** two screeners where possible; record both decisions, the final decision and the exclusion code.
 4. **Full-text screening:** obtain texts legally (MIU/EKB, open access, author copies); record E6 when a text is unavailable.
-5. **Quality assessment:** with the [quality template](templates/QUALITY_ASSESSMENT_TEMPLATE.csv) (S0-04); record any E8 exclusion.
-6. **PRISMA 2020-style diagram:** computed only from the log (S0-03).
+5. **Quality assessment:** with the [quality template](templates/QUALITY_ASSESSMENT_TEMPLATE.csv) (`CQP-4` rubric, applied in `CQP-13`); record any E8 exclusion.
+6. **PRISMA 2020-style diagram:** computed only from the log (`CQP-12`, following the `CQP-6` protocol).
 
-Disagreements are resolved by discussion, with the S0-03 owner deciding; unresolved cases go to Amr. Each resolution is recorded.
+Disagreements are resolved by discussion, with the screening owner (Abdallah, `CQP-6` and `CQP-12`) deciding; unresolved cases go to Amr. Each resolution is recorded.
 
 ## 7. Quality assessment (draft)
 
@@ -92,7 +92,7 @@ Disagreements are resolved by discussion, with the S0-03 owner deciding; unresol
 | QA4 | Is the work reproducible (data, code or settings available)? |
 | QA5 | Are the conclusions supported by the evidence? |
 
-Scoring: Yes = 1, Partial = 0.5, No = 0. The threshold and its use (exclude, or include with a caveat) are decided in S0-04 and recorded. Only scores the team actually assigned are reported.
+Scoring: Yes = 1, Partial = 0.5, No = 0. The threshold and its use (exclude, or include with a caveat) are decided in `CQP-4` and recorded. Only scores the team actually assigned are reported.
 
 ## 8. Data extraction and synthesis
 

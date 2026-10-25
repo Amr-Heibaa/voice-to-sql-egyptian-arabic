@@ -6,11 +6,13 @@ These rules apply to every AI agent (Claude Code, Codex, ChatGPT, Copilot and ot
 
 ## 1. Read first, in this order
 
-1. [PROJECT_STATUS.md](PROJECT_STATUS.md): what is and is not done or approved, right now.
-2. [docs/SPECIFICATION.md](docs/SPECIFICATION.md): the **canonical V3.1 specification and source of truth**. Read it completely before proposing anything.
-3. [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): architecture, demonstration contract and the read-only / Admin governance contract (rules R1–R5).
-4. [docs/DATASET_STRATEGY.md](docs/DATASET_STRATEGY.md) and [docs/EVALUATION_PLAN.md](docs/EVALUATION_PLAN.md).
-5. [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md): why things are the way they are. History never overrides the current spec.
+1. This file and [CLAUDE.md](CLAUDE.md): the repository instructions.
+2. [PROJECT_STATUS.md](PROJECT_STATUS.md): what is and is not done or approved, right now. Then [docs/TEAM_START_HERE.md](docs/TEAM_START_HERE.md) and [docs/SPRINT_0.md](docs/SPRINT_0.md) for the current milestone and task map.
+3. [docs/SPECIFICATION.md](docs/SPECIFICATION.md): the **canonical V3.1 specification and source of truth**. Read it completely before proposing anything.
+4. [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): architecture, demonstration contract and the read-only / Admin governance contract (rules R1–R5).
+5. The Jira `CQP` issue you are working on (the human pastes it; agents do not browse Jira on their own) and the guide for its track: [docs/proposal/](docs/proposal/README.md), [docs/presentation/](docs/presentation/README.md) or [docs/poc/POC_KICKOFF.md](docs/poc/POC_KICKOFF.md).
+6. [CONTRIBUTING.md](CONTRIBUTING.md): branch, pull request, review and validation rules.
+7. [docs/DATASET_STRATEGY.md](docs/DATASET_STRATEGY.md), [docs/EVALUATION_PLAN.md](docs/EVALUATION_PLAN.md) and [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md) when the task touches data, evaluation or history. History never overrides the current spec.
 
 **Authority order:** (1) the user's newest explicit decision in conversation; (2) `docs/SPECIFICATION.md` and the other canonical docs in `docs/`; (3) verified repository code and tests, once they exist; (4) history. If two current documents disagree, stop and report the conflict instead of choosing silently.
 
@@ -19,6 +21,7 @@ These rules apply to every AI agent (Claude Code, Codex, ChatGPT, Copilot and ot
 - Official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic*: **TA approved** (D-33). Abstract: **student-confirmed final**. All six registration form fields: **finalized**.
 - University registration form: **SUBMITTED on 25 Oct 2026** (owner-confirmed, D-37). Formal committee approval of the expanded scope: **not obtained**.
 - Implementation: **NOT STARTED**. Custom datasets and recordings: **PLANNED, not collected**. Evaluation: **NOT STARTED**.
+- Current milestone: **Sprint 0, Proposal Discussion readiness** (D-38), tracked in the private Jira project `CQP` ([docs/SPRINT_0.md](docs/SPRINT_0.md)). Its three deliverables (Proposal Document, 15-slide Presentation, minimal PoC) are **not completed**; the PoC is **not implemented**, and its scope is the team's proposal pending supervisor confirmation. The old Jira project `SCRUM` (D-37) is superseded.
 - **Do not start coding, generating data or creating infrastructure unless the user explicitly authorizes that task.** Planning, reviewing and drafting are fine.
 - Never describe anything as implemented, collected, measured, submitted, registered or committee-approved unless the user has confirmed it.
 
@@ -56,7 +59,7 @@ The canonical documents in `docs/` embed approved package text in marked blocks:
 To keep them traceable:
 
 1. **Propose before editing.** Give the file, section, old text and new text, and wait for the user's explicit approval. Never edit a marked block on your own initiative.
-2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-38**; record who authorized it.
+2. When an approved change is applied: turn a `VERBATIM` block into an `AMENDED DERIVATIVE` block (or update an existing one), keep `source_sha256`, update `derivative_sha256` and the amendment ID in the marker and in [docs/README.md](docs/README.md#provenance), write a change record with the exact before and after text (like [docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and add a dated entry to [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md#5-decision-index). The next decision is **D-39**; record who authorized it.
 3. Status-only changes go to [PROJECT_STATUS.md](PROJECT_STATUS.md) first.
 4. Keep exactly one canonical document per topic. Do not add `SPEC_v2.md`, `*_old.md`, `*_final_final.md` or copies of archive files.
 
@@ -72,5 +75,7 @@ To keep them traceable:
 - Everything pushed, including commit metadata (author names and e-mail addresses), is visible to anyone and may be copied by forks. Check §4 before every commit, and use GitHub's private no-reply e-mail address for commits.
 - Do not initialize Git, create remotes, commit, push, publish, open pull requests or change repository settings without the user's explicit instruction for that step.
 - Never rewrite published history or force-push.
+- Do not guess people's identities, GitHub handles or Jira accounts; use only mappings the owner has confirmed ([PROJECT_STATUS.md](PROJECT_STATUS.md)).
+- Finish every task by listing every file you changed and every check you ran, with its real result. Never report a check you did not run.
 - `main` is protected (D-35). Never push to `main`: work on a feature branch and open a pull request as described in [CONTRIBUTING.md](CONTRIBUTING.md). A merge needs one approval from a human other than the author. An AI agent never approves or merges a pull request, and the human who opens a pull request is responsible for all AI-generated content in it.
 - Line endings are normalized to LF by [.gitattributes](.gitattributes) so the recorded block hashes stay valid; the PNG is binary.

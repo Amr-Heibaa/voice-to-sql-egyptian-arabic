@@ -42,29 +42,33 @@ The first Proposal Discussion period begins on **10 November 2026**. This is the
 
 ## 4. Required tables and figures
 
+Owners follow the current Jira project `CQP` (D-38). The owners in the superseded D-37 `SCRUM` plan no longer apply.
+
 | Item | Minimum content | Owner (Jira) |
 |---|---|---|
-| Table I — Data Extraction | Paper ID, authors, year, venue, domain, AI technique/model, main task, dataset/evidence, evaluation metrics, quantitative findings as reported, limitations, DOI/source | Abdelrahman (S0-10) |
-| Table II — Review Methodology Summary | Research framework, search protocol, eligibility criteria, search strategy, screening approach, quality assessment, data extraction and synthesis | George (S0-11) |
-| Table III — Descriptive Statistics | Actual corpus by year, study type, venue, domain, AI technique and method category, with counts and percentages | George (S0-11) |
-| PRISMA-style flow diagram | Real counts from the screening log only | Abdallah (S0-03) |
-| Quality assessment | Criteria such as clear objectives, method quality, transparent evaluation, reproducibility, valid conclusions; suggested scoring Yes = 1, Partial = 0.5, No = 0; only scores the team actually produced | Abdelrahman (S0-04) |
-| Conceptual framework figure | Literature-grounded concepts and relations | Sayed (S0-12) |
-| Architecture figure | Approved `assets/System-Overview-3840x2160-v6.png`, unchanged | Amr (S0-14) |
+| Table I — Data Extraction | Paper ID, authors, year, venue, domain, AI technique/model, main task, dataset/evidence, evaluation metrics, quantitative findings as reported, limitations, DOI/source | Abdelrahman (`CQP-4` template, `CQP-13` completed table) |
+| Table II — Review Methodology Summary | Research framework, search protocol, eligibility criteria, search strategy, screening approach, quality assessment, data extraction and synthesis | George (`CQP-14`) |
+| Table III — Descriptive Statistics | Actual corpus by year, study type, venue, domain, AI technique and method category, with counts and percentages | George (`CQP-14`) |
+| PRISMA-style flow diagram | Real counts from the screening log only | Abdallah (`CQP-6` protocol, `CQP-12` counts and diagram) |
+| Quality assessment | Criteria such as clear objectives, method quality, transparent evaluation, reproducibility, valid conclusions; suggested scoring Yes = 1, Partial = 0.5, No = 0; only scores the team actually produced | Abdelrahman (`CQP-4` rubric, `CQP-13` applied) |
+| Conceptual framework figure | Literature-grounded concepts and relations | Sayed (`CQP-15`) |
+| Architecture figure | Approved `assets/System-Overview-3840x2160-v6.png`, unchanged | Amr (`CQP-16`) |
 
 ## 5. Section ownership
 
-| Section | Writer (Jira) | Independent reviewer |
+| Section | Writer (Jira) | Independent check |
 |---|---|---|
-| Abstract, Index Terms, I. Introduction, VII. Conclusion | Amr (S0-15) | Sayed; cross-review George (S0-17d) |
-| II. Protocol and Methodology | Sayed (S0-02), Abdallah (S0-03), Abdelrahman (S0-04) | Abdallah / Abdelrahman; cross-review Abdelrahman (S0-17c) |
-| III-A RQ1 | Sayed (S0-05) | Abdelrahman; cross-review S0-17c |
-| III-B RQ2 | Abdelrahman (S0-06) | Sayed; cross-review Abdallah (S0-17e) |
-| III-C RQ3 | George (S0-07) | Amr; cross-review Amr (S0-17a) |
-| III-D RQ4 | Abdallah (S0-08) | Amr; cross-review S0-17a |
-| Tables I–III | Abdelrahman (S0-10), George (S0-11) | George, Abdallah; cross-review S0-17e |
-| IV. Discussion and conceptual framework | Sayed (S0-12) | Abdelrahman; cross-review S0-17a |
-| V. Threats to Validity | Abdallah (S0-13) | Sayed; cross-review Sayed (S0-17b) |
-| VI. Proposed Solution and RQ5 | Amr (S0-09, S0-14) | Abdallah (gaps), Abdelrahman (technical); cross-review S0-17b, S0-17c |
-| Integration, IEEE formatting, references | George (S0-16) | Amr |
-| QA and readiness | Abdelrahman (S0-17), Amr (S0-18) | Amr; team sign-off with George's independent check |
+| Title and Authors, Index Terms | George (`CQP-5`), Sayed (`CQP-15`) | Deck and title audit in `CQP-20` |
+| Abstract (a new Proposal Abstract, about 150–250 words), I. Introduction, IV. Discussion, VII. Conclusion | Sayed (`CQP-15`) | Reviewer named in `CQP-15` |
+| II. Review Protocol and Methodology | Sayed (`CQP-3`), Abdallah (`CQP-6`, `CQP-12`), Abdelrahman (`CQP-4`) | QA-05 Abdallah (`CQP-31`) |
+| III-A RQ1 | Sayed (`CQP-7`) | QA-03 Abdelrahman (`CQP-29`) |
+| III-B RQ2 | Abdelrahman (`CQP-8`) | QA-02 Sayed (`CQP-28`) |
+| III-C RQ3 | George (`CQP-9`) | QA-01 Amr (`CQP-27`) |
+| III-D RQ4 | Abdallah (`CQP-10`) | Gap evidence checked in QA-05 (`CQP-31`) |
+| Tables I–III | Abdelrahman (`CQP-13`), George (`CQP-14`) | Spot-check and reconciliation named in those issues |
+| V. Threats to Validity | Abdallah (`CQP-12`) | Reviewer named in `CQP-12` |
+| VI. Proposed Solution with the explicit RQ5 answer | Amr (`CQP-11`, `CQP-16`) | QA-04 George (`CQP-30`); RQ5 traceability in QA-05 (`CQP-31`) |
+| RQ baseline and objectives | Amr (`CQP-2`) | Team agreement recorded in `CQP-2` |
+| IEEE formatting and references | George (`CQP-5`, `CQP-14`) | Citation reconciliation in `CQP-14` |
+
+The full task map is in [../SPRINT_0.md](../SPRINT_0.md#4-task-map). The detailed acceptance criteria of each section are in its Jira issue.
