@@ -1,10 +1,10 @@
-# Final Registration Form Fields (V3.1) — NOT SUBMITTED
+# Final Registration Form Fields (V3.1) — Submitted 25 Oct 2026
 
 > **Repository note (updated 24 Oct 2026).** The block below records the final copy-paste text of the six MIU registration-form fields.
 >
 > - **Source:** `FINAL_FORM_COPY_PASTE.md` in the final export folder (generated unchanged from `04_FORM_PREPARATION_NOT_SUBMITTED/MIU_FORM_V3_1_DRAFT_NOT_SUBMITTED.md` in `MIU_VoiceToSQL_V3_1_FINAL_REGISTRATION_READY_2026-10-23.zip`, which is not included in this repository). **Original source SHA-256:** `157d641e856a4602f2f717f306865c1eb8fef2fb773f6a7fe9a362c20a36f804`.
 > - **This is an amended derivative, not a byte-identical copy.** D-31 changed two explanatory lines outside the field boxes ([CHANGE_RECORD_D-31.md](CHANGE_RECORD_D-31.md)). **D-33** (24 Oct 2026) replaced the **Field 1** value with the TA-approved official title *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic* and updated the header line ([CHANGE_RECORD_D-33.md](CHANGE_RECORD_D-33.md)). **The text inside the field boxes for Fields 2–6 is byte-identical to the source** and is verified box by box. **Derivative SHA-256:** `9a5eb9b44459c1330baff9b3a3eb698f263f7d2e03a9a56148f06f9edb28233f`.
-> - **All six fields are final** (title TA-approved, D-33; Abstract student-confirmed final; Fields 4–5 student-confirmed final; Scope team-approved; diagram team- and supervisor-approved). **The university form has NOT been submitted**; the student submits it personally.
+> - **All six fields are final** (title TA-approved, D-33; Abstract student-confirmed final; Fields 4–5 student-confirmed final; Scope team-approved; diagram team- and supervisor-approved). **Status update (D-37):** the student submitted the form personally; the owner confirmed the submission on 25 Oct 2026. Committee acceptance is not confirmed. The status line inside the block below is the dated 23–24 Oct snapshot and is kept unchanged.
 > - The **Abstract (Field 2) must never be rewritten**, shortened, expanded or translated.
 
 <!-- BEGIN AMENDED DERIVATIVE source="FINAL_FORM_COPY_PASTE.md" source_sha256="157d641e856a4602f2f717f306865c1eb8fef2fb773f6a7fe9a362c20a36f804" derivative_sha256="9a5eb9b44459c1330baff9b3a3eb698f263f7d2e03a9a56148f06f9edb28233f" amendment="D-31,D-33" -->
