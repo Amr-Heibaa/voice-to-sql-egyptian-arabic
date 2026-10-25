@@ -16,7 +16,12 @@ There is exactly **one canonical document per topic**. Each embeds approved text
 | [CHANGE_RECORD_D-35.md](CHANGE_RECORD_D-35.md) | Branch protection on `main` and team workflow (D-35; no content change) | Record |
 | [CHANGE_RECORD_D-36.md](CHANGE_RECORD_D-36.md) | Repository visibility changed from private to public (D-36; no content change) | Record |
 | [CHANGE_RECORD_D-37.md](CHANGE_RECORD_D-37.md) | Registration-form submission confirmed; proposal Sprint 0 planning (D-37; no scope or design change) | Record |
-| [proposal/README.md](proposal/README.md) | Proposal Sprint 0 planning workspace (requirements, RQs, plan, SLR protocol draft, templates) | Planning (D-37) |
+| [TEAM_START_HERE.md](TEAM_START_HERE.md) | Team and AI-agent onboarding: reading order, where each member starts, task loop, public vs private, handoff prompt | Onboarding (D-38) |
+| [SPRINT_0.md](SPRINT_0.md) | **Current** Sprint 0 index: three deliverables, milestones, Jira `CQP` task map, owners, dependencies, gates | Planning (D-38) |
+| [CHANGE_RECORD_D-38.md](CHANGE_RECORD_D-38.md) | Repository aligned with Jira `CQP` Sprint 0 and the Proposal Discussion deliverables (D-38; supersedes the D-37 plan for current coordination; no scope or design change) | Record |
+| [proposal/README.md](proposal/README.md) | Deliverable 1, Proposal Document: requirements, RQs, document workflow, SLR protocol draft, templates (the D-37 `SPRINT_0_PLAN.md` inside is superseded history) | Planning (D-37, D-38) |
+| [presentation/README.md](presentation/README.md) | Deliverable 2, Presentation: 15 prescribed slides, owners, review checklist | Planning (D-38) |
+| [poc/POC_KICKOFF.md](poc/POC_KICKOFF.md), [poc/INTERFACE_CONTRACT_DRAFT.md](poc/INTERFACE_CONTRACT_DRAFT.md) | Deliverable 3, Proof of Concept: proposed scope, scenarios, owners, draft interface contract. **Not implemented; contract not approved** | Planning (D-38) |
 
 **If two documents ever disagree,** SPECIFICATION.md wins for scope and design, [PROJECT_STATUS.md](../PROJECT_STATUS.md) wins for current status, and the conflict must be reported (AGENTS.md §1).
 

@@ -1,5 +1,7 @@
 # Sprint 0 Plan — Academic Proposal Research and Documentation
 
+> **SUPERSEDED by D-38 (25 Oct 2026). Historical record only.** This D-37 plan used the old Jira project `SCRUM`, which is **no longer authoritative**. Current Sprint 0 coordination (three deliverables, Jira project `CQP`, Workstream `CQP-1`) is in [../SPRINT_0.md](../SPRINT_0.md) and [../CHANGE_RECORD_D-38.md](../CHANGE_RECORD_D-38.md). Do not use the task IDs, links, owners or dates below for current work. The text below is unchanged from D-37.
+
 | Item | Value |
 |---|---|
 | Jira project | **ClearQuery** (key `SCRUM`), team Scrum board |

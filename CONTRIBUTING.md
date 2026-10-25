@@ -2,7 +2,7 @@
 
 This is the team's official workflow (D-35, approved by the student on 24 Oct 2026). It applies to every human contributor and every AI coding agent. The project rules themselves live in [AGENTS.md](AGENTS.md); this file only describes **how** changes reach `main`.
 
-> **Current stage:** planning documentation only. Implementation is **NOT STARTED**; the university registration form is **SUBMITTED** (25 Oct 2026, owner-confirmed) but committee acceptance is not confirmed ([PROJECT_STATUS.md](PROJECT_STATUS.md)). Do not start coding, generating data or creating infrastructure unless that task has been explicitly authorized.
+> **Current stage:** Sprint 0, Proposal Discussion readiness (D-38; tasks in Jira `CQP`, index in [docs/SPRINT_0.md](docs/SPRINT_0.md)). Implementation is **NOT STARTED**; the university registration form is **SUBMITTED** (25 Oct 2026, owner-confirmed) but committee acceptance is not confirmed ([PROJECT_STATUS.md](PROJECT_STATUS.md)). Do not start coding, generating data or creating infrastructure unless that task has been explicitly authorized. Where PoC code lives (this public repository or a private one) is an open owner decision.
 
 ## 1. The workflow
 
@@ -10,12 +10,13 @@ This is the team's official workflow (D-35, approved by the student on 24 Oct 20
 Feature branch  ->  Pull Request  ->  Human code review  ->  Merge into main
 ```
 
-1. **Start from the latest `main`:** `git switch main`, `git pull`, then `git switch -c <type>/<short-description>`.
-2. **Work on your feature branch only.** Keep each branch to one topic, and keep it short-lived.
-3. **Open a pull request** against `main`. Open it as a **draft** while work is in progress, and fill in the [pull request template](.github/pull_request_template.md) completely.
-4. **Mark it ready for review** and request a reviewer.
-5. **A human reviewer other than the author approves** it, and every review conversation is resolved.
-6. **Merge** with *Squash and merge*, then delete the feature branch.
+1. **Read your Jira issue and check its prerequisites** (Blocks links, gates such as G-A).
+2. **Start from the latest `main`:** `git switch main`, `git pull --ff-only`, then `git switch -c <type>/<short-description>`. If `git status` shows changes you did not make, stop and ask before switching.
+3. **Work on your feature branch only.** Keep each branch to one topic (your Jira task), and keep it short-lived. Run the relevant checks before pushing.
+4. **Open a pull request** against `main`. Open it as a **draft** while work is in progress, and fill in the [pull request template](.github/pull_request_template.md) completely.
+5. **Mark it ready for review** and request a reviewer.
+6. **A human reviewer other than the author approves** it, and every review conversation is resolved.
+7. **Merge only after the project owner (`Amr-Heibaa`) has explicitly authorized it** in the pull request (team rule since D-38), with *Squash and merge*, then delete the feature branch.
 
 ## 2. Rules for `main`
 
@@ -50,6 +51,8 @@ Use `<type>/<short-kebab-description>`, and add the decision ID when there is on
 | `spike` | Time-boxed experiments that may be thrown away | `spike/asr-egyptian-arabic` |
 | `chore` | Repository maintenance | `chore/update-gitignore` |
 
+When the work belongs to a Jira issue, put its key right after the type, in lowercase: `docs/cqp-3-slr-protocol`, `feat/cqp-26-sql-guard`, `fix/cqp-25-rtl-layout`.
+
 Keep names lowercase, use hyphens, and do not include personal data.
 
 ## 4. Commits
@@ -61,7 +64,8 @@ Keep names lowercase, use hyphens, and do not include personal data.
 
 ## 5. Pull requests
 
-- Keep pull requests small and focused on one topic.
+- Keep pull requests small and focused on one topic, and name the Jira issue (`CQP-xx`) in the description.
+- Say what you checked and paste the real command output. Documentation pull requests: check that every link and file reference exists. Code pull requests (once code is authorized): run the component's tests and the safety tests. There is no CI yet, so nothing is checked automatically.
 - Fill in every section of the template, including the **AI assistance disclosure**.
 - Changes to the canonical documents in `docs/` follow the change protocol in [AGENTS.md §5](AGENTS.md#5-change-protocol): proposal first, explicit approval, a change record and a decision ID.
 - The PR description must not claim anything is implemented, collected, measured, submitted or approved unless that has been confirmed.

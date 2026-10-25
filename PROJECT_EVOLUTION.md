@@ -25,6 +25,7 @@ This file explains **how the project reached V3.1** so that a teammate or AI age
 | Branch protection and team workflow (D-35) | 24 Oct 2026 | Protection configured on `main` (pull request with 1 approval by someone other than the author, stale approvals dismissed, conversations resolved, no force push or deletion, no admin bypass) and read back through the GitHub API; team workflow and pull request template added | Enforcement not yet tested; no collaborator changes; registration NOT SUBMITTED |
 | Public repository (D-36) | 24 Oct 2026 | After a public-release audit of all files and the full history, the existing repository was changed from **private** to **public** with the owner's authorization; Git history preserved; branch protection re-read and unchanged | No content, history or collaborator changes; D-32, D-34 and D-35 kept as history; registration NOT SUBMITTED |
 | Proposal Sprint 0 planning (D-37) | 25 Oct 2026 | The owner confirmed submission of the registration form (committee acceptance not confirmed). In the existing Jira project ClearQuery (`SCRUM`), the active `SCRUM Sprint 0` was organised for the proposal paper: one Epic, 18 tasks with self-contained execution packages, 5 QA review subtasks and 38 dependency links. Planning documents were added under `docs/proposal/` | No scope, design, title, Abstract or v6 change; implementation NOT STARTED; no literature search performed yet |
+| Sprint 0 re-planned in Jira `CQP` (D-38) | 25 Oct 2026 | The owner replaced the D-37 `SCRUM` plan with a Business / Project Management Jira project `CQP`: Workstream `CQP-1` covering the three Proposal Discussion deliverables (Proposal Document, 15-slide English Presentation, 10% PoC), 25 tasks, 5 independent QA sub-tasks and 18 hard dependencies. The repository gained a team onboarding path, a Sprint 0 index, presentation and PoC guides and a draft PoC interface contract | No scope, title, Abstract, v6 or specification change; nothing implemented; D-37 kept as history |
 
 ## 2. Title history
 
@@ -125,7 +126,9 @@ Condensed from `02_CURRENT_SPECIFICATION/V3_TO_V3_1_DECISION_CHANGELOG.md` in th
 | D-36 | 24 Oct | **Repository only:** visibility changed from private to public after a public-release audit, authorized by the owner; history preserved; protection unchanged; [docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md) |
 | D-37 | 25 Oct | Registration-form submission confirmed by the owner (status only; committee acceptance pending, Q12). **Repository and Jira:** proposal Sprint 0 planning (Epic `SCRUM-5`, tasks `SCRUM-6`–`SCRUM-23`, QA subtasks `SCRUM-24`–`SCRUM-28`) and `docs/proposal/`; [docs/CHANGE_RECORD_D-37.md](docs/CHANGE_RECORD_D-37.md) |
 
-New decisions continue from **D-38** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
+| D-38 | 25 Oct | **Repository and planning:** the Jira Business project `CQP` (Workstream `CQP-1`, tasks `CQP-2`–`CQP-26`, QA sub-tasks `CQP-27`–`CQP-31`) replaces the D-37 `SCRUM` plan for current Sprint 0 coordination; the three Proposal Discussion deliverables, team onboarding, presentation and PoC guides and a draft PoC interface contract added; [docs/CHANGE_RECORD_D-38.md](docs/CHANGE_RECORD_D-38.md) |
+
+New decisions continue from **D-39** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
 
 ## 6. Where the history lives (not in this repository)
 

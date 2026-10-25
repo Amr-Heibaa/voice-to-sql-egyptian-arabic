@@ -4,7 +4,9 @@
 
 <!-- What does this pull request change, and why? One short paragraph. -->
 
-**Decision / issue:** <!-- e.g. D-36, or "none" -->
+**Jira issue:** <!-- e.g. CQP-26, or "none" -->
+
+**Decision:** <!-- e.g. D-38, or "none" -->
 
 **Type:** <!-- docs | feat | fix | data | eval | spike | chore -->
 
@@ -15,6 +17,14 @@
 - [ ] The V3.1 scope is not dropped, downgraded or expanded (`AGENTS.md` rule 4).
 - [ ] Nothing is described as implemented, collected, measured, submitted, registered or committee-approved unless that has been confirmed.
 - [ ] No implementation, data generation or infrastructure work unless that task was explicitly authorized.
+
+## Changed files and deliverables
+
+<!-- List every changed file and, if this PR delivers a Jira artifact, which one. -->
+
+## Known limitations
+
+<!-- What is incomplete, untested or deferred? Write "none known" only if that is true. -->
 
 ## Testing and verification
 
@@ -34,6 +44,12 @@
 - [ ] No secrets, credentials, tokens, connection strings or `.env` files.
 - [ ] No voice recordings, consent forms, participant data or real personal or employee data.
 - [ ] No downloaded third-party datasets, archives or backups (`AGENTS.md` §4).
+
+## Owner merge authorization
+
+Merging needs GitHub's required approval **and** the project owner's (`Amr-Heibaa`) explicit authorization in a pull request comment. Link that comment here when it exists; nobody, human or AI, writes it on the owner's behalf.
+
+**Owner authorization:** <!-- link to the owner's comment, or "not yet given" -->
 
 ## AI assistance disclosure
 

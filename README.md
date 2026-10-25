@@ -12,11 +12,23 @@
 | Implementation | **NOT STARTED** |
 | Custom datasets and recordings | **PLANNED, not collected** (dataset generation NOT STARTED) |
 | Evaluation | **NOT STARTED** (no results exist) |
-| Proposal paper (Sprint 0) | **Planning set up; research NOT STARTED** (D-37; [docs/proposal/](docs/proposal/README.md)) |
+| Sprint 0 — Proposal Discussion readiness | **Planned in Jira project `CQP`; all 30 work items To Do** (D-38; [docs/SPRINT_0.md](docs/SPRINT_0.md)) |
+| Proposal Document, 15-slide Presentation, 10% Proof of Concept | **NOT completed**; the PoC is **NOT implemented** |
 
 Details and approvals: [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
+## Start here
+
+**New team member or AI agent? Read [docs/TEAM_START_HERE.md](docs/TEAM_START_HERE.md) first.**
+
+- **Current milestone:** Sprint 0 — Proposal Discussion readiness. The university's Proposal Discussion **period** begins on **10 November 2026**; the team's internal completion target is 8 Nov. Next internal gate: **PoC Interface Contract, Gate G-A, 28 Oct 2026**.
+- **Three required deliverables:** (1) the Proposal Document, an IEEE-style Systematic Literature Review with RQ1–RQ5 and a Proposed Solution ([docs/proposal/](docs/proposal/README.md)); (2) a mandatory **15-slide English** presentation ([docs/presentation/](docs/presentation/README.md)); (3) a minimal working **10% implementation / Proof of Concept** ([docs/poc/POC_KICKOFF.md](docs/poc/POC_KICKOFF.md)). None is completed.
+- **Tasks:** the private Jira project `CQP`, Workstream `CQP-1`. Each issue holds the instructions and the AI execution prompt. Task map and owners: [docs/SPRINT_0.md](docs/SPRINT_0.md).
+- **Workflow:** feature branch → draft pull request → independent human review → merge only with the owner's explicit authorization ([CONTRIBUTING.md](CONTRIBUTING.md)).
+
 > This **public** repository (public since 24 Oct 2026, D-36) currently holds **planning documentation only**: the approved V3.1 specification, architecture, dataset strategy, evaluation plan, final registration-form text and the approved system-overview diagram. It contains no source code, no data, no recordings and no results. Nothing described here should be read as implemented, collected, measured or committee-approved.
+>
+> **Public-repository notice:** everything committed here, including commit metadata, is visible to anyone. Private material (university template, Drive and Overleaf links, paper PDFs, recordings, credentials, e-mail addresses, Jira account IDs) never goes into this repository ([docs/TEAM_START_HERE.md §6](docs/TEAM_START_HERE.md#6-where-things-go-public-vs-private)).
 
 ## Abstract
 
@@ -77,6 +89,8 @@ Egyptian-Arabic voice or text
 
 | Path | Contents |
 |---|---|
+| [docs/TEAM_START_HERE.md](docs/TEAM_START_HERE.md) | **Onboarding:** reading order, where each member starts, task loop, public vs private, AI agent handoff prompt |
+| [docs/SPRINT_0.md](docs/SPRINT_0.md) | **Current Sprint 0 index:** three deliverables, milestones, Jira `CQP` task map, owners, dependencies and gates |
 | [PROJECT_STATUS.md](PROJECT_STATUS.md) | Current status, approvals and their limits, open decisions, next steps |
 | [PROJECT_EVOLUTION.md](PROJECT_EVOLUTION.md) | How the project evolved from the original concept through V2 and V3 to V3.1, with the decision index |
 | [AGENTS.md](AGENTS.md) | Rules for AI agents and contributors (read before changing anything) |
@@ -90,8 +104,11 @@ Egyptian-Arabic voice or text
 | [docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md) | D-34 current GitHub collaborator status (active vs pending) |
 | [docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md) | D-35 branch protection on `main` (configured, API-verified, enforcement not yet tested) and team workflow |
 | [docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md) | D-36 repository visibility changed from private to public: audit, API evidence, protection after the change, remaining risks |
-| [docs/CHANGE_RECORD_D-37.md](docs/CHANGE_RECORD_D-37.md) | D-37 registration-form submission confirmed; proposal Sprint 0 planning in Jira and `docs/proposal/` |
-| [docs/proposal/](docs/proposal/README.md) | Proposal Sprint 0: requirements, research questions, plan and Jira task index, SLR protocol draft, traceability template, CSV templates |
+| [docs/CHANGE_RECORD_D-37.md](docs/CHANGE_RECORD_D-37.md) | D-37 registration-form submission confirmed; proposal Sprint 0 planning in the old Jira `SCRUM` project (superseded by D-38) and `docs/proposal/` |
+| [docs/CHANGE_RECORD_D-38.md](docs/CHANGE_RECORD_D-38.md) | D-38 repository aligned with the current Jira `CQP` Sprint 0 and the three Proposal Discussion deliverables; team onboarding |
+| [docs/proposal/](docs/proposal/README.md) | Deliverable 1, Proposal Document: requirements, research questions, document workflow, SLR protocol draft, traceability template, CSV templates |
+| [docs/presentation/](docs/presentation/README.md) | Deliverable 2, Presentation: the 15 prescribed slides and their owners |
+| [docs/poc/](docs/poc/POC_KICKOFF.md) | Deliverable 3, Proof of Concept: proposed scope, scenarios, component owners, draft interface contract (not implemented) |
 | [docs/SPECIFICATION.md](docs/SPECIFICATION.md) | **Canonical V3.1 specification (source of truth)** |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Architecture, demonstration contract and read-only/Admin governance contract |
 | [docs/DATASET_STRATEGY.md](docs/DATASET_STRATEGY.md) | Team-approved dataset strategy (DS-1–DS-8, DS-11) |

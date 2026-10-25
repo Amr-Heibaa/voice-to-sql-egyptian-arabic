@@ -1,6 +1,6 @@
 # Research Questions — Working Baseline (Sprint 0)
 
-**Status:** working baseline proposed by the project owner on 25 Oct 2026. The team reviews and agrees the final wording in Jira task **S0-01** ([SCRUM-6](https://miuegypt-team-e0iuh5ol.atlassian.net/browse/SCRUM-6)). The wording below is not final until that review is recorded. Any refinement may narrow wording or remove overlap, but must not change the V3.1 scope ([../SPECIFICATION.md](../SPECIFICATION.md) §5).
+**Status:** working baseline proposed by the project owner on 25 Oct 2026. The team reviews and agrees the final wording in Jira task **`CQP-2`** (owner Amr; D-38. The superseded D-37 plan called this task S0-01 in the old `SCRUM` project). The wording below is not final until that review is recorded. Any refinement may narrow wording or remove overlap, but must not change the V3.1 scope ([../SPECIFICATION.md](../SPECIFICATION.md) §5).
 
 ## 1. The five questions
 
@@ -22,7 +22,7 @@
 | RQ4 | Limitations and open problems reported in RQ1–RQ3 evidence; gaps labelled by evidence strength | Included studies, tool evidence | Absence of search results presented as a proven gap |
 | RQ5 | Design reasoning grounded in RQ1–RQ4, mapped to the fixed V3.1 architecture and its planned evaluation | [../SPECIFICATION.md](../SPECIFICATION.md) §8, §11, §12, §15; [RQ_GAP_SOLUTION_MATRIX.md](RQ_GAP_SOLUTION_MATRIX.md) | ClearQuery results (none exist); novelty claims for Text-to-SQL, schema generation, semantic layers or clarification in general |
 
-## 3. Scope mapping (initial; S0-01 refines it)
+## 3. Scope mapping (initial; `CQP-2` refines it)
 
 **P** = primary research contribution, **S** = supporting or secondary capability, **–** = not a focus of that RQ.
 
@@ -41,9 +41,9 @@
 
 The primary research focus follows [../SPECIFICATION.md](../SPECIFICATION.md) §3.2 (hypothesis H-A): reducing silent semantic errors in Egyptian-Arabic Voice-to-SQL through ambiguity-aware business-intent interpretation and selective answering. The schema-design track follows the provisional hypothesis H-S (§3.3).
 
-## 4. Coherence checks for S0-01
+## 4. Coherence checks for `CQP-2`
 
 - RQ1 maps the landscape, RQ2 the methods, RQ3 the tools, RQ4 the gaps and RQ5 the proposed direction; no two questions should ask the same thing.
 - No RQ may need ClearQuery experimental results to be answered.
 - AI-assisted schema design is covered as a secondary capability without displacing the primary focus.
-- Final wording, sub-questions and the agreed matrix are recorded in Jira (S0-01). A later pull request may update this file.
+- Final wording, sub-questions and the agreed matrix are recorded in Jira (`CQP-2`). A later pull request may update this file.
