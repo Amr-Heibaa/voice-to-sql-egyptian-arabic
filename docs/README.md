@@ -8,13 +8,15 @@ There is exactly **one canonical document per topic**. Each embeds approved text
 | [ARCHITECTURE.md](ARCHITECTURE.md) | v6 overview; three-workspace architecture and demonstration contract; RBAC; read-only / Admin governance contract (R1–R5) | Two amended derivatives (D-31) |
 | [DATASET_STRATEGY.md](DATASET_STRATEGY.md) | Synthetic company design, benchmark composition, recordings, annotation, schema briefs, public references (DS-1–DS-8, DS-11) | Amended derivative (D-31) |
 | [EVALUATION_PLAN.md](EVALUATION_PLAN.md) | Part A: evaluation at a glance (navigation only). Part B: translation pipeline, P2/P4 fairness, leakage, error separation. Normative definitions stay in SPECIFICATION.md §15 and DATASET_STRATEGY.md §6–§8 | Part B verbatim |
-| [REGISTRATION_FORM_FIELDS.md](REGISTRATION_FORM_FIELDS.md) | Final text of the six MIU registration-form fields (**NOT SUBMITTED**) | Amended derivative (D-31 outside the boxes; D-33 header line and Field 1 title); Field 2–6 boxes byte-identical |
+| [REGISTRATION_FORM_FIELDS.md](REGISTRATION_FORM_FIELDS.md) | Final text of the six MIU registration-form fields (form submitted on 25 Oct 2026, owner-confirmed; the block keeps its dated pre-submission wording) | Amended derivative (D-31 outside the boxes; D-33 header line and Field 1 title); Field 2–6 boxes byte-identical |
 | [CHANGE_RECORD_D-31.md](CHANGE_RECORD_D-31.md) | Every D-31 correction with reason and exact before/after text | Record |
 | [CHANGE_RECORD_D-32.md](CHANGE_RECORD_D-32.md) | Private GitHub repository creation (no content change) | Record |
 | [CHANGE_RECORD_D-33.md](CHANGE_RECORD_D-33.md) | TA-approved official title update (D-33), exact before/after text | Record |
 | [CHANGE_RECORD_D-34.md](CHANGE_RECORD_D-34.md) | GitHub collaborator status (D-34; no content change) | Record |
 | [CHANGE_RECORD_D-35.md](CHANGE_RECORD_D-35.md) | Branch protection on `main` and team workflow (D-35; no content change) | Record |
 | [CHANGE_RECORD_D-36.md](CHANGE_RECORD_D-36.md) | Repository visibility changed from private to public (D-36; no content change) | Record |
+| [CHANGE_RECORD_D-37.md](CHANGE_RECORD_D-37.md) | Registration-form submission confirmed; proposal Sprint 0 planning (D-37; no scope or design change) | Record |
+| [proposal/README.md](proposal/README.md) | Proposal Sprint 0 planning workspace (requirements, RQs, plan, SLR protocol draft, templates) | Planning (D-37) |
 
 **If two documents ever disagree,** SPECIFICATION.md wins for scope and design, [PROJECT_STATUS.md](../PROJECT_STATUS.md) wins for current status, and the conflict must be reported (AGENTS.md §1).
 

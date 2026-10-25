@@ -2,7 +2,7 @@
 
 This is the team's official workflow (D-35, approved by the student on 24 Oct 2026). It applies to every human contributor and every AI coding agent. The project rules themselves live in [AGENTS.md](AGENTS.md); this file only describes **how** changes reach `main`.
 
-> **Current stage:** planning documentation only. Implementation is **NOT STARTED** and university registration is **NOT SUBMITTED** ([PROJECT_STATUS.md](PROJECT_STATUS.md)). Do not start coding, generating data or creating infrastructure unless that task has been explicitly authorized.
+> **Current stage:** planning documentation only. Implementation is **NOT STARTED**; the university registration form is **SUBMITTED** (25 Oct 2026, owner-confirmed) but committee acceptance is not confirmed ([PROJECT_STATUS.md](PROJECT_STATUS.md)). Do not start coding, generating data or creating infrastructure unless that task has been explicitly authorized.
 
 ## 1. The workflow
 

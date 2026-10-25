@@ -2,16 +2,17 @@
 
 **Misr International University (MIU) · Software Engineering graduation project · V3.1 team-approved planning baseline**
 
-| Item | Status (24 October 2026) |
+| Item | Status (25 October 2026) |
 |---|---|
 | Official title: *ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic* | **TA approved** (D-33, recorded 24 Oct 2026; replaces *Voice-to-SQL in Egyptian Arabic*, D-29) |
 | Abstract | **Student-confirmed final** |
 | Six registration form fields | **Finalized** |
-| University registration | **NOT SUBMITTED** |
+| University registration form | **SUBMITTED** (25 Oct 2026, owner-confirmed; committee acceptance not confirmed) |
 | Formal committee approval of the expanded V3.1 scope | **Not obtained** |
 | Implementation | **NOT STARTED** |
 | Custom datasets and recordings | **PLANNED, not collected** (dataset generation NOT STARTED) |
 | Evaluation | **NOT STARTED** (no results exist) |
+| Proposal paper (Sprint 0) | **Planning set up; research NOT STARTED** (D-37; [docs/proposal/](docs/proposal/README.md)) |
 
 Details and approvals: [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
@@ -89,11 +90,13 @@ Egyptian-Arabic voice or text
 | [docs/CHANGE_RECORD_D-34.md](docs/CHANGE_RECORD_D-34.md) | D-34 current GitHub collaborator status (active vs pending) |
 | [docs/CHANGE_RECORD_D-35.md](docs/CHANGE_RECORD_D-35.md) | D-35 branch protection on `main` (configured, API-verified, enforcement not yet tested) and team workflow |
 | [docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md) | D-36 repository visibility changed from private to public: audit, API evidence, protection after the change, remaining risks |
+| [docs/CHANGE_RECORD_D-37.md](docs/CHANGE_RECORD_D-37.md) | D-37 registration-form submission confirmed; proposal Sprint 0 planning in Jira and `docs/proposal/` |
+| [docs/proposal/](docs/proposal/README.md) | Proposal Sprint 0: requirements, research questions, plan and Jira task index, SLR protocol draft, traceability template, CSV templates |
 | [docs/SPECIFICATION.md](docs/SPECIFICATION.md) | **Canonical V3.1 specification (source of truth)** |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Architecture, demonstration contract and read-only/Admin governance contract |
 | [docs/DATASET_STRATEGY.md](docs/DATASET_STRATEGY.md) | Team-approved dataset strategy (DS-1–DS-8, DS-11) |
 | [docs/EVALUATION_PLAN.md](docs/EVALUATION_PLAN.md) | Evaluation plan: tracks, metrics, fairness and leakage controls |
-| [docs/REGISTRATION_FORM_FIELDS.md](docs/REGISTRATION_FORM_FIELDS.md) | Final text of the six registration-form fields (not submitted) |
+| [docs/REGISTRATION_FORM_FIELDS.md](docs/REGISTRATION_FORM_FIELDS.md) | Final text of the six registration-form fields (form submitted on 25 Oct 2026; text unchanged) |
 | [assets/System-Overview-3840x2160-v6.png](assets/System-Overview-3840x2160-v6.png) | Approved high-level system overview (3840 × 2160) |
 
 ## Research positioning
