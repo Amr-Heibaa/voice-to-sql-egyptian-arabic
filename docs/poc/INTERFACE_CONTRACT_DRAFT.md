@@ -83,7 +83,7 @@ A subset of the illustrative BIR in [../SPECIFICATION.md](../SPECIFICATION.md) Â
 }
 ```
 
-`department_id` is copied from server configuration, not from the model. Metric IDs must exist in the catalog. The Jira prompt in `CQP-22` uses shorter names (`intent`, `metric`, `dimension`, `ambiguous_slots`); the naming is a **G-A decision**, and this draft follows the specification.
+`department_id` is copied from server configuration, not from the model. Metric IDs must exist in the catalog. The `CQP-24` task description uses shorter names (`intent`, `metric`, `dimension`, `ambiguous_slots`); the naming is a **G-A decision**, and this draft follows the specification.
 
 ### 3.4 `Decision` (owner: `CQP-24`)
 

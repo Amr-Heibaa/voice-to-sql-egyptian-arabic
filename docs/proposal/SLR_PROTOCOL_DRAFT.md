@@ -1,6 +1,6 @@
 # Systematic Literature Review Protocol — DRAFT
 
-> **DRAFT. No search has been run.** This is the starting plan for Jira task **`CQP-3`** (owner Sayed; independent reproducibility check by Abdallah in QA-05, `CQP-31`; D-38. The superseded D-37 plan called this task S0-02 in the old `SCRUM` project). Sayed will finalise the databases, exact queries, criteria and window. Every count, decision and score must later come from real, logged searches and screening. Nothing in this file is a finding.
+> **DRAFT. No search has been run.** This is the starting plan for Jira task **`CQP-3`** (owner Sayed; independent reproducibility check by Abdallah in QA-05, `CQP-31`; D-38. The superseded D-37 plan called this task S0-02 in the old `SCRUM` project). Sayed will finalise the databases, exact queries, criteria and window. Every count, decision and score must later come from real, logged searches and screening. Nothing in this file is a finding. Where this draft and the Jira tasks `CQP-3`, `CQP-4` or `CQP-6` differ, the Jira tasks win; they follow the university template since D-39 (27 Oct 2026).
 
 ## 1. Review objective and questions
 
@@ -8,7 +8,7 @@ To identify, appraise and synthesise peer-reviewed evidence on natural-language 
 
 - **Literature RQs** (answered by this protocol): RQ1, RQ2 and RQ4.
 - **RQ3** uses official product documentation (with access dates) plus any peer-reviewed tool evaluations found by the protocol. Vendor claims are kept separate from research findings.
-- **RQ5** is answered by design reasoning from RQ1–RQ4 ([RQ_GAP_SOLUTION_MATRIX.md](RQ_GAP_SOLUTION_MATRIX.md)).
+- **RQ5** is answered by design reasoning from RQ1–RQ4: briefly in Section III-E and in full in Section VI.
 
 ## 2. Information sources (to confirm against actual MIU / EKB access)
 
@@ -20,7 +20,7 @@ To identify, appraise and synthesise peer-reviewed evidence on natural-language 
 | SpringerLink (Springer Nature) | Primary | Instructor-recommended |
 | Web of Science | Primary, if accessible | Instructor-recommended; access through the EKB to be confirmed |
 | Egyptian Knowledge Bank (EKB) | Access route / primary | Instructor-recommended |
-| ACL Anthology | Primary (proposed) | Main peer-reviewed venue family for Text-to-SQL and Arabic NLP; team to confirm |
+| ACL Anthology | Not in the instructor's list or in `CQP-3` | ACL-venue papers found through Google Scholar are logged as other sources (manual identification in PRISMA) |
 | Google Scholar, arXiv | Discovery only | Venue credibility must be checked; the preprint rule is in §5 |
 | [../SPECIFICATION.md](../SPECIFICATION.md) §24.2 references | Leads only ("other sources" in PRISMA) | Each one is screened with the same criteria; none is pre-included |
 
@@ -75,7 +75,7 @@ Each database search is logged with the exact string, date, field restrictions, 
 
 1. **Identification:** run the logged searches; add "other sources" separately.
 2. **Deduplication:** by DOI first, then normalised title + first author + year; record the number removed.
-3. **Title/abstract screening:** two screeners where possible; record both decisions, the final decision and the exclusion code.
+3. **Title/abstract screening:** two screeners judge every record (`CQP-6`); record both decisions, the final decision and the exclusion code.
 4. **Full-text screening:** obtain texts legally (MIU/EKB, open access, author copies); record E6 when a text is unavailable. Store a paper PDF in the University Drive **only when its access and sharing terms permit it** (for example an open-access licence, or publisher or MIU/EKB terms that allow sharing within the team). Otherwise store only the DOI or link, the bibliographic metadata, your extraction notes and permitted references. PDFs never go into this public repository.
 5. **Quality assessment:** with the [quality template](templates/QUALITY_ASSESSMENT_TEMPLATE.csv) (`CQP-4` rubric, applied in `CQP-13`); record any E8 exclusion.
 6. **PRISMA 2020-style diagram:** computed only from the log (`CQP-12`, following the `CQP-6` protocol).
@@ -92,7 +92,7 @@ Disagreements are resolved by discussion, with the screening owner (Abdallah, `C
 | QA4 | Is the work reproducible (data, code or settings available)? |
 | QA5 | Are the conclusions supported by the evidence? |
 
-Scoring: Yes = 1, Partial = 0.5, No = 0. The threshold and its use (exclude, or include with a caveat) are decided in `CQP-4` and recorded. Only scores the team actually assigned are reported.
+These are the template's five criteria. Scoring: Yes = 1, Partial = 0.5, No = 0; average = total / 5. As in the template, papers with an average below 0.5 are excluded (E8) before the 1 Nov freeze and counted in the PRISMA diagram, unless `CQP-4` records another threshold. Only scores the team actually assigned are reported.
 
 ## 8. Data extraction and synthesis
 

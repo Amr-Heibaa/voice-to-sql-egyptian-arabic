@@ -27,7 +27,7 @@ Deliverable 2 of 3 ([../SPRINT_0.md](../SPRINT_0.md)). Jira: `CQP-17` … `CQP-2
 | 8 | Methods and Tools (RQ2) | Section III-B (`CQP-8`) | Abdelrahman | `CQP-19` |
 | 9 | Market & Tools Overview (RQ3) | Section III-C (`CQP-9`) | George | `CQP-20` |
 | 10 | Identified Gaps & Biases (RQ4) | Section III-D (`CQP-10`) | Abdallah | `CQP-21` |
-| 11 | Conceptual Framework & Future Opportunities — Proposed Directions (RQ5) | RQ5 traceability (`CQP-11`), Discussion (`CQP-15`) | Abdallah | `CQP-21` |
+| 11 | Conceptual Framework & Future Opportunities — Proposed Directions (RQ5) | Short RQ5 answer and VI-B inputs (`CQP-11`), Discussion (`CQP-15`) | Abdallah | `CQP-21` |
 | 12 | Proposed Solution Overview Diagram | v6 diagram; Section VI (`CQP-16`) | Amr | `CQP-17` |
 | 13 | Evaluation & Metrics | Planned P2 vs P4 evaluation and metrics ([../SPECIFICATION.md](../SPECIFICATION.md) §15) | Abdelrahman | `CQP-19` |
 | 14 | Positioning & Expected Contributions | Section VI-D/E (`CQP-16`) | Amr | `CQP-17` |

@@ -1,6 +1,6 @@
 # Project Status — ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic
 
-**As of:** 25 October 2026 · **Baseline:** V3.1 team-approved planning baseline · **Source package:** `MIU_VoiceToSQL_V3_1_FINAL_REGISTRATION_READY_2026-10-23.zip` (manifest SHA-256 `a5976cd1e639a2cff3a1e1a45c3e9208b275a411485bf2c0da9cb65d9d858684`; 33/33 files verified)
+**As of:** 27 October 2026 · **Baseline:** V3.1 team-approved planning baseline · **Source package:** `MIU_VoiceToSQL_V3_1_FINAL_REGISTRATION_READY_2026-10-23.zip` (manifest SHA-256 `a5976cd1e639a2cff3a1e1a45c3e9208b275a411485bf2c0da9cb65d9d858684`; 33/33 files verified)
 
 This is the **live status file**. Status lines inside the document blocks of `docs/` are dated snapshots from 22–24 October 2026; when this file and a snapshot differ, this file is current for **status**, and `docs/SPECIFICATION.md` stays the source of truth for **scope and design**. Repository amendment **D-31** (23 Oct 2026) corrected stale references and status wording in those blocks without changing scope or design ([docs/CHANGE_RECORD_D-31.md](docs/CHANGE_RECORD_D-31.md)), and amendment **D-33** (24 Oct 2026) recorded the TA-approved official title ([docs/CHANGE_RECORD_D-33.md](docs/CHANGE_RECORD_D-33.md)).
 
@@ -18,7 +18,7 @@ This is the **live status file**. Status lines inside the document blocks of `do
 | Voice recordings | **PLANNED, NOT COLLECTED** | Consent protocol and any required ethics review must come first |
 | Evaluation | **NOT STARTED** | No results of any kind exist |
 | User interviews / validation studies | **NOT STARTED** | Market need is an unverified hypothesis (H-M) |
-| Sprint 0 — Proposal Discussion readiness | **PLANNED IN JIRA `CQP`; NOT STARTED** (D-38, 25 Oct 2026) | Current and authoritative: Jira project **ClearQuery - Graduation Project** (`CQP`, Business / Project Management), Workstream `CQP-1`, 25 tasks (`CQP-2`–`CQP-26`), 5 QA sub-tasks (`CQP-27`–`CQP-31`), 18 Blocks links, all To Do (read-only check, 25 Oct 2026). Three required deliverables: Proposal Document, 15-slide English Presentation, 10% PoC; none completed. The Proposal Discussion period starts on 10 Nov 2026. Index: [docs/SPRINT_0.md](docs/SPRINT_0.md) |
+| Sprint 0 — Proposal Discussion readiness | **PLANNED IN JIRA `CQP`; NOT STARTED** (D-38, 25 Oct 2026; task descriptions aligned with the university template on 27 Oct 2026, D-39) | Current and authoritative: Jira project **ClearQuery - Graduation Project** (`CQP`, Business / Project Management), Workstream `CQP-1`, 25 tasks (`CQP-2`–`CQP-26`), 5 QA sub-tasks (`CQP-27`–`CQP-31`), 18 Blocks links; all To Do (27 Oct 2026). The Proposal Document tasks follow the template section by section, and no task contains a ready-made AI prompt ([docs/CHANGE_RECORD_D-39.md](docs/CHANGE_RECORD_D-39.md)). Three required deliverables: Proposal Document, 15-slide English Presentation, 10% PoC; none completed. The Proposal Discussion period starts on 10 Nov 2026. Index: [docs/SPRINT_0.md](docs/SPRINT_0.md) |
 | Previous proposal plan (D-37) | **SUPERSEDED** (D-38) | The old Jira project `SCRUM` (Epic `SCRUM-5`, 18 tasks, 5 QA subtasks, 38 links) is no longer authoritative for current planning; [docs/CHANGE_RECORD_D-37.md](docs/CHANGE_RECORD_D-37.md) stays as history |
 | Shared private workspace | **DECIDED: University Drive; SETUP PENDING** | Decided by the owner on 25 Oct 2026. The folder and its access settings are not yet created; no link is published here |
 | GitHub repository | **PUBLIC (D-36, 24 Oct 2026)** | https://github.com/Amr-Heibaa/voice-to-sql-egyptian-arabic; visibility `PUBLIC` since 24 Oct 2026 (about 16:48 UTC), changed by the owner's authorization after a public-release audit, Git history preserved ([docs/CHANGE_RECORD_D-36.md](docs/CHANGE_RECORD_D-36.md)). Created **private** on 23 Oct 2026 (D-32); branch `main`; initial commit `c05bd5a` ([docs/CHANGE_RECORD_D-32.md](docs/CHANGE_RECORD_D-32.md)); repository name unchanged by the D-33 title update |
@@ -87,11 +87,13 @@ Other pending items: ethics/consent review for recordings; optional permission r
 ## 5. Next steps
 
 1. **Registration form:** done; submitted on 25 Oct 2026 (owner-confirmed, D-37). Committee acceptance of the expanded scope is awaited. **Sprint 0:** deliver the Proposal Document, the 15-slide English Presentation and the minimal PoC before the Proposal Discussion period that starts on 10 Nov 2026 ([docs/SPRINT_0.md](docs/SPRINT_0.md)). Internal checkpoints (targets, not university deadlines):
-   - 26–28 Oct: RQs, SLR protocol, extraction/quality and screening frameworks, PoC scope and Interface Contract.
+   - 26–28 Oct: RQs (27 Oct); criteria, databases and search strings shown to the supervisor; recording sheet, extraction and quality columns, Overleaf setup; PoC scope and Interface Contract.
    - **28 Oct:** proposed PoC contract Gate G-A.
-   - **1 Nov:** text-only walking skeleton (Checkpoint C1).
-   - 4–7 Nov: PoC component integration and academic drafting.
-   - **8 Nov:** internal completion target.
+   - 29 Oct–1 Nov: searches, screening and quality scores.
+   - **1 Nov:** corpus freeze (included papers fixed, PRISMA final) and text-only walking skeleton (Checkpoint C1).
+   - 2–4 Nov: Table I, Tables II and III, Results RQ1–RQ4 and Section V.
+   - 4–7 Nov: short RQ5 answer, Proposed Solution, Introduction, Discussion, Conclusion and Abstract; PoC component integration.
+   - **8 Nov:** internal completion target, including the final review of the document.
    - 9 Nov: rehearsal and contingency checks.
    - **10 Nov:** the university Proposal Discussion period begins.
 2. **Repository:** done. The GitHub repository was created as private and pushed after independent review (D-32), and made public on 24 Oct 2026 after a public-release audit (D-36). Collaborators are managed by the owner; the current state is recorded in D-34. Since D-35, `main` is protected: every change goes through a pull request approved by someone other than its author ([CONTRIBUTING.md](CONTRIBUTING.md)). A controlled enforcement test is still open, and the GitHub repository description still uses the earlier title (D-36 open items).
