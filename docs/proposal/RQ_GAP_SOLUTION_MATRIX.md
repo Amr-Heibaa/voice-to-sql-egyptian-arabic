@@ -1,8 +1,8 @@
 # RQ → Gap → Solution → Evaluation Traceability Matrix (Template)
 
-> **Template. No gap has been identified yet.** Gap rows are filled by Jira **`CQP-10`** (RQ4, Abdallah) from real review evidence. The mapping to components is completed by **`CQP-11`** (RQ5 traceability, Amr) and used in `CQP-16` (D-38; the superseded D-37 plan used S0-08 and S0-09 in the old `SCRUM` project). The component and evaluation columns below restate the fixed V3.1 design ([../SPECIFICATION.md](../SPECIFICATION.md)). They are not results and not novelty claims.
+> **Optional working aid. No gap has been identified yet.** Since D-39 (27 Oct 2026) the Jira tasks do not require this matrix: `CQP-10` writes the gaps in Section III-D with citations, and `CQP-11` writes the short RQ5 answer (III-E) and the three VI-B lists (From RQ1 and RQ2 / From RQ3 / From RQ4) for `CQP-16`. The team may use the tables below as a scratch aid. The component and evaluation columns restate the fixed V3.1 design ([../SPECIFICATION.md](../SPECIFICATION.md)). They are not results and not novelty claims.
 
-## 1. Gap register (to be filled by `CQP-10`)
+## 1. Gap register (optional)
 
 | Gap ID | Gap statement | RQ4 theme | Type (literature / tool / evaluation / hypothesis) | Supporting sources | Counter-evidence | Evidence strength (Strong / Moderate / Hypothesis) |
 |---|---|---|---|---|---|---|
@@ -26,7 +26,7 @@
 | AI-assisted schema design with Admin review (no DDL execution) | Secondary research track | S0 / S1 / S2 schema comparison (§15.3) | |
 | Audit logging | Supporting | State and audit checks (§15.4) | |
 
-## 3. Traceability chain (to be filled by `CQP-11`)
+## 3. Traceability chain (optional)
 
 | RQ | Gap ID | Evidence (citations) | ClearQuery component(s) | Contribution class | Planned evaluation and metric |
 |---|---|---|---|---|---|

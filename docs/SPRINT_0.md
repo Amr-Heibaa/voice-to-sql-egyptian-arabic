@@ -1,6 +1,6 @@
 # Sprint 0 — Proposal Discussion Readiness (Jira CQP)
 
-**Current plan since D-38 (25 Oct 2026).** This file is the repository's **index** to Sprint 0. The detailed instructions, acceptance criteria and copy-ready AI execution prompts live **only in Jira**, inside each issue. When this file and a Jira issue disagree on the details of a task, the Jira issue wins; report the difference so this index can be corrected.
+**Current plan since D-38 (25 Oct 2026), revised by D-39 (27 Oct 2026).** This file is the repository's **index** to Sprint 0. The detailed steps of each task live **only in Jira**, inside each issue. Since D-39 the Proposal Document tasks follow the university template and the lecture guide section by section, and no issue contains a ready-made AI prompt. When this file and a Jira issue disagree on the details of a task, the Jira issue wins; report the difference so this index can be corrected.
 
 | Item | Value |
 |---|---|
@@ -8,7 +8,7 @@
 | Workstream | **`CQP-1` — Sprint 0: Proposal Discussion Readiness** |
 | What "Sprint 0" means here | A label for the `CQP-1` Workstream. It is **not** a native Scrum sprint, and the task titles are the team's internal work breakdown, not official university task names |
 | Work items | 25 main Tasks (`CQP-2` to `CQP-26`), 5 independent QA Sub-tasks (`CQP-27` to `CQP-31`), 18 hard **Blocks** dependency links |
-| Status | All 31 issues **To Do** (read-only check, 25 Oct 2026) |
+| Status | All 31 issues **To Do** (27 Oct 2026) |
 | Superseded plan | The D-37 plan in the old `SCRUM` project ([proposal/SPRINT_0_PLAN.md](proposal/SPRINT_0_PLAN.md)) is **historical only** |
 
 > **Access.** Jira is private to the team. Sign in with your team account and open the project with key `CQP`; search an issue by its key (for example `CQP-12`). The site address is shared privately by Amr and is deliberately not published in this public repository.
@@ -25,7 +25,7 @@ Owner-provided summary of the university's requirements for the first Proposal D
 
 Independent QA for all three: `CQP-27` … `CQP-31`. The presentation and the whole discussion are in **English**, and **formal attire** is required.
 
-The university gave **no feature checklist and no formula for "10%"**. The PoC boundary in [poc/POC_KICKOFF.md](poc/POC_KICKOFF.md) is the team's engineering proposal (RTM item R-01 in `CQP-1`), pending supervisor confirmation.
+The university gave **no feature checklist and no formula for "10%"**. The PoC boundary in [poc/POC_KICKOFF.md](poc/POC_KICKOFF.md) is the team's engineering proposal, pending supervisor confirmation.
 
 ## 2. Milestones
 
@@ -33,12 +33,13 @@ The Proposal Discussion **period** begins on **10 Nov 2026** (the start of the p
 
 | Date | Internal checkpoint |
 |---|---|
-| 26–28 Oct | RQ and scope baseline (`CQP-2`), SLR protocol (`CQP-3`), extraction and quality framework (`CQP-4`), IEEE structure (`CQP-5`), screening/PRISMA protocol (`CQP-6`), PoC scope and **Interface Contract** (`CQP-22` Phase A). Amr creates the University Drive folder |
+| 26–28 Oct | The five RQs (`CQP-2`, 27 Oct); criteria, databases and search strings, shown to the supervisor before searching (`CQP-3`); recording sheet and screening rules (`CQP-6`); extraction columns and quality checklist (`CQP-4`); Overleaf setup (`CQP-5`); PoC scope and **Interface Contract** (`CQP-22` Phase A). Amr creates the University Drive folder |
 | **28 Oct** | **Gate G-A**: PoC Interface Contract v1.0 frozen when all four component owners comment "Contract v1.0 agreed" on `CQP-22` |
-| 29 Oct – 2 Nov | Parallel RQ1–RQ4 research and screening; PoC components built against the contract; early slides |
-| **1 Nov** | **Checkpoint C1**: text-only walking skeleton through real components (typed Arabic → minimal BIR/policy → guard → seeded DB → rows) |
-| 3–7 Nov | PRISMA, Tables I–III, gap synthesis, RQ5 traceability, Proposed Solution; PoC Phase B integration (4–7 Nov); slide drafting |
-| **8 Nov** | **Internal completion target**: integrated document, complete deck, integrated PoC, independent QA done |
+| 29 Oct – 1 Nov | Searches and screening (titles, abstracts, full texts) with quality scores (`CQP-12`); PoC components built against the contract; early slides |
+| **1 Nov** | **Corpus freeze**: the list of included papers is fixed and PRISMA is final (`CQP-12`); Section III is written only from this list. **Checkpoint C1**: text-only walking skeleton through real components (typed Arabic → minimal BIR/policy → guard → seeded DB → rows) |
+| 2–4 Nov | Table I (`CQP-13`, 2 Nov); Tables II and III (`CQP-14`, 3 Nov); Results RQ1–RQ4 (`CQP-7` … `CQP-10`) and Section V (`CQP-12`), 4 Nov; Introduction draft (`CQP-15`, 4 Nov) |
+| 4–7 Nov | Short RQ5 answer and VI-B inputs (`CQP-11`, 5 Nov); Proposed Solution (`CQP-16`, 6 Nov); Discussion, Conclusion and Abstract (`CQP-15`); PoC Phase B integration (4–7 Nov); slide drafting |
+| **8 Nov** | **Internal completion target**: integrated document with its final review (`CQP-15`), complete deck, integrated PoC, independent QA done |
 | 9 Nov | Full English rehearsal, live-demo and venue-network test, contingency checks, formal-attire confirmation |
 | **10 Nov** | University Proposal Discussion period begins |
 
@@ -58,27 +59,27 @@ Assignments as read from Jira on 25 Oct 2026 (first names only; no e-mail addres
 
 ## 4. Task map
 
-Status column: every issue was **To Do** at the 25 Oct 2026 read-only check. Planning IDs (`S0-DOC-01` …) are the prefixes used in the Jira titles.
+Titles and targets as in Jira on 27 Oct 2026 (D-39). Planning IDs (`S0-DOC-01` …) are the prefixes used in the Jira titles. The order of work for the document is the order in §2 and in `CQP-1`, which is also the order of the Jira list.
 
 ### 4.1 Proposal Document (`CQP-2` … `CQP-16`)
 
-| Jira | Planning ID | Task | Owner | Expected deliverable | Internal target |
+| Jira | Planning ID | Task | Owner | Template part it produces | Internal target |
 |---|---|---|---|---|---|
-| `CQP-2` | S0-DOC-01 | Research Questions, Scope and Research Objectives | Amr | Agreed RQ1–RQ5 baseline, objectives, evidence-to-solution matrix | 27 Oct |
-| `CQP-3` | S0-DOC-02 | Systematic Literature Review Protocol | Sayed | Final protocol: databases, search strings, criteria, search log | 27 Oct |
-| `CQP-4` | S0-DOC-03 | Data Extraction and Study Quality Framework | Abdelrahman | Extraction sheet template and quality rubric | 28 Oct |
-| `CQP-5` | S0-DOC-04 | IEEE Proposal Structure and Reference Framework | George | Paper outline, formatting checklist, shared reference library | 28 Oct |
-| `CQP-6` | S0-DOC-05 | Screening and PRISMA Protocol | Abdallah | Screening protocol and PRISMA tracking sheet | 28 Oct |
-| `CQP-7` | S0-DOC-06 | RQ1: State-of-the-Art Literature Synthesis | Sayed | Section III-A | 2 Nov |
-| `CQP-8` | S0-DOC-07 | RQ2: AI Methods and Technical Approaches | Abdelrahman | Section III-B | 2 Nov |
-| `CQP-9` | S0-DOC-08 | RQ3: Commercial and Open-Source Tools | George | Section III-C | 2 Nov |
-| `CQP-10` | S0-DOC-09 | RQ4: Research Gaps and Biases | Abdallah | Section III-D and the evidence-based gap register | 3 Nov |
-| `CQP-11` | S0-DOC-10 | RQ5: Gap-to-Proposed-Direction Traceability | Amr | RQ5 rationale and traceability matrix | 4 Nov |
-| `CQP-12` | S0-DOC-11 | Study Selection, PRISMA and Threats to Validity | Abdallah | Selection log, PRISMA diagram with real counts, Section V | 4 Nov |
-| `CQP-13` | S0-DOC-12 | Complete Data Extraction Table I and Quality Assessment | Abdelrahman | Table I and applied quality scores | 4 Nov |
-| `CQP-14` | S0-DOC-13 | Complete Tables II/III and Citation Reconciliation | George | Tables II and III; reconciled IEEE bibliography | 5 Nov |
-| `CQP-15` | S0-DOC-14 | Write Introduction, Abstract, Discussion, Conceptual Framework and Conclusion | Sayed | Abstract, Index Terms, Sections I, IV and VII | 7 Nov |
-| `CQP-16` | S0-DOC-15 | Write Detailed Proposed Solution and Evaluation Strategy | Amr | Section VI (with the explicit RQ5 answer), architecture figure, planned evaluation | 6 Nov |
+| `CQP-2` | S0-DOC-01 | Research Questions, Scope and Research Objectives | Amr | The five RQs with the template labels, and the objectives (Section I) | 27 Oct |
+| `CQP-3` | S0-DOC-02 | Systematic Literature Review Protocol | Sayed | Criteria, databases and search strings, shown to the supervisor; Sections II (opening), II-A, II-B | 28 Oct |
+| `CQP-4` | S0-DOC-03 | Data Extraction and Study Quality Framework | Abdelrahman | Extraction columns and the template quality checklist; Sections II-D, II-E | 28 Oct |
+| `CQP-5` | S0-DOC-04 | IEEE Proposal Structure and Reference Framework | George | Cover, header, numbering, Acknowledgments and the shared .bib file in Overleaf | 28 Oct |
+| `CQP-6` | S0-DOC-05 | Screening and PRISMA Protocol | Abdallah | Recording sheet (search log and papers), screening rules, PRISMA boxes (II-C, Fig. 1) | 28 Oct |
+| `CQP-7` | S0-DOC-06 | RQ1: State-of-the-Art Literature Synthesis | Sayed | Section III-A | 4 Nov |
+| `CQP-8` | S0-DOC-07 | RQ2: AI Methods and Technical Approaches | Abdelrahman | Section III-B | 4 Nov |
+| `CQP-9` | S0-DOC-08 | RQ3: Commercial and Open-Source Tools | George | Section III-C | 4 Nov |
+| `CQP-10` | S0-DOC-09 | RQ4: Research Gaps and Biases | Abdallah | Section III-D | 4 Nov |
+| `CQP-11` | S0-DOC-10 | RQ5: Short Answer (III-E) and Inputs for VI-B | Amr | Section III-E and the three VI-B lists | 5 Nov |
+| `CQP-12` | S0-DOC-11 | Study Selection, PRISMA and Threats to Validity | Abdallah | Searches and screening, Fig. 1 PRISMA (final 1 Nov), Section V | 4 Nov |
+| `CQP-13` | S0-DOC-12 | Complete Data Extraction Table I and Quality Assessment | Abdelrahman | Quality scores and Table I (II-F) | 2 Nov |
+| `CQP-14` | S0-DOC-13 | Tables II and III | George | Tables II and III (II-G, II-H) | 3 Nov |
+| `CQP-15` | S0-DOC-14 | Introduction, Discussion, Conclusion, Abstract and Final Review | Sayed (George: Abstract draft and final review) | Abstract, Index Terms, Sections I, IV and VII, and the final review of the whole document | 8 Nov |
+| `CQP-16` | S0-DOC-15 | Proposed Solution (Section VI) | Amr | Section VI with the template headings A–E; Fig. 2 is the approved System Overview v6 | 6 Nov |
 
 ### 4.2 Presentation (`CQP-17` … `CQP-21`)
 
@@ -106,11 +107,11 @@ No one reviews their own work.
 
 | Jira | Planning ID | Reviewer | Reviews | Parent |
 |---|---|---|---|---|
-| `CQP-27` | S0-QA-01 | Amr | RQ3 market claims, Slide 9 (George); SQL-guard safety evidence (Abdallah) | `CQP-9` |
-| `CQP-28` | S0-QA-02 | Sayed | RQ2 methods and ASR/NLP technical correctness (Abdelrahman) | `CQP-8` |
-| `CQP-29` | S0-QA-03 | Abdelrahman | RQ1 sources and evidence-to-metric accuracy (Sayed) | `CQP-7` |
-| `CQP-30` | S0-QA-04 | George | Proposed Solution, architecture/visual consistency, independent end-to-end demo re-run (Amr) | `CQP-16` |
-| `CQP-31` | S0-QA-05 | Abdallah | SLR protocol reproducibility (Sayed) and RQ1–RQ5 traceability (Amr) | `CQP-3` |
+| `CQP-27` | S0-QA-01 | Amr | Tool sources in III-C and Slide 9 (George); SQL-guard tests (Abdallah) | `CQP-9` |
+| `CQP-28` | S0-QA-02 | Sayed | III-B and Slide 8: speech, Arabic language and translation claims (Abdelrahman) | `CQP-8` |
+| `CQP-29` | S0-QA-03 | Abdelrahman | III-A and Slide 7: references and numbers (Sayed) | `CQP-7` |
+| `CQP-30` | S0-QA-04 | George | Section VI, Slides 12 and 14, clean-start demo re-run (Amr) | `CQP-16` |
+| `CQP-31` | S0-QA-05 | Abdallah | Sections II, II-A, II-B reproducibility (Sayed); III-E and VI-B link back to Section III (Amr) | `CQP-3` |
 
 ## 5. Dependencies and gates
 
@@ -118,7 +119,7 @@ No one reviews their own work.
 
 | Blocked task | Blocked by |
 |---|---|
-| `CQP-11` RQ5 traceability | `CQP-10` |
+| `CQP-11` RQ5 short answer and VI-B inputs | `CQP-10` |
 | `CQP-12` Selection, PRISMA, Threats | `CQP-3`, `CQP-6` |
 | `CQP-13` Table I | `CQP-4` |
 | `CQP-14` Tables II/III | `CQP-12` |
@@ -131,14 +132,13 @@ No one reviews their own work.
 
 - **G-A (28 Oct):** Interface Contract v1.0 frozen in `CQP-22` Phase A. Component implementation in `CQP-23` … `CQP-26` follows the frozen contract. Exploratory spikes (for example, trying ASR models) may start earlier.
 - **C1 (1 Nov):** text-only walking skeleton.
+- **Corpus freeze (1 Nov):** the list of included papers is fixed in `CQP-12`; Section III cites only papers on this list.
 
 ## 6. How to use your Jira issue
 
-1. Open your issue by key. Read **all** of it: overview, background, step-by-step instructions, deliverables, acceptance criteria, human verification and dependencies.
-2. Check the **Blocks** links and gates. If an input you need is not ready, comment on the producing issue instead of guessing.
-3. Copy the **AI Execution Prompt** section into a new AI session, then paste only the inputs the prompt asks for. Never paste secrets, private university material links, personal data or restricted datasets into an AI tool.
-4. Treat AI output as a draft. Check every claim, citation and number yourself.
+1. Open your issue by key. Read **all** of it: the part of the template it produces, the steps and "Done when".
+2. Read the same part of the university template and of the lecture guide. Use the sample document as an example of form and length only; the guide lists what not to copy from it. The team's private Proposal map page explains every part of the template and links it to its task (link shared privately).
+3. Check the **Blocks** links and gates. If an input you need is not ready, comment on the producing issue instead of guessing.
+4. No issue contains a ready-made AI prompt. If you use an AI tool, brief it yourself from your issue and the template, and correct it when you find a mistake. Never paste secrets, private university material links, personal data or restricted datasets into an AI tool. Treat AI output as a draft: check every claim, citation and number yourself.
 5. Put the artifact where the issue says (University Drive folder, private Overleaf project or a pull request to this repository; see [TEAM_START_HERE.md](TEAM_START_HERE.md#6-where-things-go-public-vs-private)).
 6. Post a comment on your issue with the link, version and date, and @mention the people who consume it. Then move the issue status yourself.
-
-The prompts are deliberately **not** copied into this public repository: they are long, they change, and one copy (in Jira) avoids conflicting versions.

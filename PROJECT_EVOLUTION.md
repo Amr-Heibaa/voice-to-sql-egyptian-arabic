@@ -26,6 +26,7 @@ This file explains **how the project reached V3.1** so that a teammate or AI age
 | Public repository (D-36) | 24 Oct 2026 | After a public-release audit of all files and the full history, the existing repository was changed from **private** to **public** with the owner's authorization; Git history preserved; branch protection re-read and unchanged | No content, history or collaborator changes; D-32, D-34 and D-35 kept as history; registration NOT SUBMITTED |
 | Proposal Sprint 0 planning (D-37) | 25 Oct 2026 | The owner confirmed submission of the registration form (committee acceptance not confirmed). In the existing Jira project ClearQuery (`SCRUM`), the active `SCRUM Sprint 0` was organised for the proposal paper: one Epic, 18 tasks with self-contained execution packages, 5 QA review subtasks and 38 dependency links. Planning documents were added under `docs/proposal/` | No scope, design, title, Abstract or v6 change; implementation NOT STARTED; no literature search performed yet |
 | Sprint 0 re-planned in Jira `CQP` (D-38) | 25 Oct 2026 | The owner replaced the D-37 `SCRUM` plan with a Business / Project Management Jira project `CQP`: Workstream `CQP-1` covering the three Proposal Discussion deliverables (Proposal Document, 15-slide English Presentation, 10% PoC), 25 tasks, 5 independent QA sub-tasks and 18 hard dependencies. The repository gained a team onboarding path, a Sprint 0 index, presentation and PoC guides and a draft PoC interface contract | No scope, title, Abstract, v6 or specification change; nothing implemented; D-37 kept as history |
+| Jira tasks aligned with the university template (D-39) | 27 Oct 2026 | At a team member's instruction, the Jira `CQP` descriptions were rewritten so that every Proposal Document task follows the university template and the lecture guide section by section, in the lecture's order of work, with a corpus freeze on 1 Nov. All ready-made AI prompts and estimates in the descriptions were removed from all 31 issues. The repository's Sprint 0 index, onboarding and proposal guides were aligned with Jira | No scope, title, Abstract, v6 or specification change; no issue deleted; owners unchanged; nothing implemented |
 
 ## 2. Title history
 
@@ -127,8 +128,9 @@ Condensed from `02_CURRENT_SPECIFICATION/V3_TO_V3_1_DECISION_CHANGELOG.md` in th
 | D-37 | 25 Oct | Registration-form submission confirmed by the owner (status only; committee acceptance pending, Q12). **Repository and Jira:** proposal Sprint 0 planning (Epic `SCRUM-5`, tasks `SCRUM-6`–`SCRUM-23`, QA subtasks `SCRUM-24`–`SCRUM-28`) and `docs/proposal/`; [docs/CHANGE_RECORD_D-37.md](docs/CHANGE_RECORD_D-37.md) |
 
 | D-38 | 25 Oct | **Repository and planning:** the Jira Business project `CQP` (Workstream `CQP-1`, tasks `CQP-2`–`CQP-26`, QA sub-tasks `CQP-27`–`CQP-31`) replaces the D-37 `SCRUM` plan for current Sprint 0 coordination; the three Proposal Discussion deliverables, team onboarding, presentation and PoC guides and a draft PoC interface contract added; [docs/CHANGE_RECORD_D-38.md](docs/CHANGE_RECORD_D-38.md) |
+| D-39 | 27 Oct | **Jira and repository:** Jira `CQP` task descriptions aligned with the university template and the lecture guide (order of work, corpus freeze on 1 Nov, new targets); AI prompts removed from all 31 issues; Sprint 0 index, onboarding and proposal guides aligned; [docs/CHANGE_RECORD_D-39.md](docs/CHANGE_RECORD_D-39.md) |
 
-New decisions continue from **D-39** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
+New decisions continue from **D-40** (see [AGENTS.md](AGENTS.md#5-change-protocol)).
 
 ## 6. Where the history lives (not in this repository)
 

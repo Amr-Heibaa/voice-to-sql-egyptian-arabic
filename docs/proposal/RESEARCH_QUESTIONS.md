@@ -10,7 +10,7 @@
 | RQ2 | AI methods | Which AI techniques and architectures have been investigated for speech recognition, Arabic language processing, Text-to-SQL, schema grounding, ambiguity detection, and controlled clarification? | Section III-B |
 | RQ3 | Existing tools | What commercial and open-source conversational database analytics tools exist, and what capabilities, limitations, and deployment characteristics do they offer? | Section III-C |
 | RQ4 | Research gaps | What unresolved limitations remain in semantic correctness, ambiguity handling, Egyptian-Arabic speech, missing business data, authorization, and evaluation? | Section III-D (and Section IV) |
-| RQ5 | Proposed directions | How can an ambiguity-aware Egyptian-Arabic Voice-to-SQL architecture address the identified gaps while enabling safe, controlled, multi-department business analytics? | Section VI, explicit RQ5 subsection |
+| RQ5 | Proposed directions | How can an ambiguity-aware Egyptian-Arabic Voice-to-SQL architecture address the identified gaps while enabling safe, controlled, multi-department business analytics? | Section III-E (short) and Section VI (full) |
 
 ## 2. Expected evidence
 
@@ -19,7 +19,7 @@
 | RQ1 | Peer-reviewed studies and benchmarks found by the SLR protocol | IEEE Xplore, ACM DL, ACL Anthology, ScienceDirect, SpringerLink, EKB | Single summaries per paper; unverified preprints presented as peer-reviewed |
 | RQ2 | Peer-reviewed method studies with reported evaluation settings | Same as RQ1 | Cross-benchmark numeric rankings |
 | RQ3 | Official product documentation (with access dates) and independent or peer-reviewed tool evaluations, kept separate | Vendor docs, open-source repositories, published evaluations | Marketing claims as findings; "not supported" without an explicit statement |
-| RQ4 | Limitations and open problems reported in RQ1–RQ3 evidence; gaps labelled by evidence strength | Included studies, tool evidence | Absence of search results presented as a proven gap |
+| RQ4 | Limitations and open problems reported in RQ1–RQ3 evidence; every gap supported by citations | Included studies, tool evidence | Absence of search results presented as a proven gap |
 | RQ5 | Design reasoning grounded in RQ1–RQ4, mapped to the fixed V3.1 architecture and its planned evaluation | [../SPECIFICATION.md](../SPECIFICATION.md) §8, §11, §12, §15; [RQ_GAP_SOLUTION_MATRIX.md](RQ_GAP_SOLUTION_MATRIX.md) | ClearQuery results (none exist); novelty claims for Text-to-SQL, schema generation, semantic layers or clarification in general |
 
 ## 3. Scope mapping (initial; `CQP-2` refines it)

@@ -41,8 +41,8 @@ The live status is always [PROJECT_STATUS.md](../PROJECT_STATUS.md).
 
 | Member | Start with | Then | Also before 28 Oct |
 |---|---|---|---|
-| **Amr** | `CQP-2` RQ baseline (due 27 Oct) | `CQP-22` Phase A: PoC scope + Interface Contract v1.0 | Create the University Drive folder and record it in `CQP-1` section E; send the PoC scope to the supervisor |
-| **Sayed** | `CQP-3` SLR protocol (due 27 Oct) | `CQP-7` RQ1 | Review the draft PoC contract for voice/ASR/translation (`CQP-23`) |
+| **Amr** | `CQP-2` RQ baseline (due 27 Oct) | `CQP-22` Phase A: PoC scope + Interface Contract v1.0 | Create the University Drive folder and post its link as a comment on `CQP-1`; send the PoC scope to the supervisor |
+| **Sayed** | `CQP-3` SLR protocol (due 28 Oct) | `CQP-7` RQ1 | Review the draft PoC contract for voice/ASR/translation (`CQP-23`) |
 | **Abdelrahman** | `CQP-4` extraction and quality framework (due 28 Oct) | `CQP-8` RQ2 | Review the draft PoC contract for BIR and the decision policy (`CQP-24`) |
 | **George** | `CQP-5` IEEE structure and references (due 28 Oct) | `CQP-9` RQ3 | Review the draft PoC contract for the UI (`CQP-25`) |
 | **Abdallah** | `CQP-6` screening and PRISMA protocol (due 28 Oct) | `CQP-10` RQ4 | Review the draft PoC contract for data, guard and SQL (`CQP-26`) |
@@ -53,7 +53,7 @@ Full task map: [SPRINT_0.md §4](SPRINT_0.md#4-task-map).
 
 1. **Read** your Jira issue completely (see [SPRINT_0.md §6](SPRINT_0.md#6-how-to-use-your-jira-issue)).
 2. **Check prerequisites:** Blocks links, Gate G-A, and handoffs you are waiting for.
-3. **Run the AI execution prompt** from your issue in a new AI session, giving it only the inputs it asks for.
+3. **Read the template part** your issue produces, in the university template and the lecture guide, and the team's private Proposal map page. No issue contains a ready-made AI prompt; if you use an AI tool, brief it yourself (§7).
 4. **Produce** your deliverable. Every source, number and claim must be real and checkable.
 5. **Verify it yourself** against the acceptance criteria in the issue.
 6. **Request independent review** from the reviewer named in the issue or QA sub-task. Nobody reviews their own work.
@@ -79,45 +79,29 @@ This repository is **public**. Anyone on the internet can read it, including eve
 | Location | What goes there |
 |---|---|
 | **This GitHub repository (public)** | Approved project documentation, public-safe architecture, onboarding, contribution rules, status, public-safe technical contracts. Source code **only** after the owner approves publishing it here (open decision, [PROJECT_STATUS.md §4](../PROJECT_STATUS.md#4-open-decisions-from-specificationmd-22)) |
-| **Jira `CQP` (private)** | Task instructions, AI execution prompts, assignments, delivery comments, QA verdicts |
+| **Jira `CQP` (private)** | Task steps, assignments, delivery comments, QA verdicts |
 | **University Drive (private)** | Search logs, screening/PRISMA sheets, extraction sheets, slide decks, PoC docs and test evidence, consented recordings. Paper PDFs **only when their access and sharing terms permit it**; otherwise DOI links, bibliographic metadata, extraction notes and permitted references. Folder and access setup is **pending** (Amr) |
 | **Private Overleaf project** | The university template and the working Proposal Document |
 | **Private code repository (if the owner designates one)** | PoC code, if the owner decides it should not be public |
 
 **Never commit:** university e-mail addresses, Jira account IDs, the private university template, private Drive or Overleaf links, instructor recordings or transcripts, paper PDFs (paywalled or not), voice recordings, API keys, passwords, database credentials, `.env` files, real personal data, downloaded third-party datasets, or large generated artifacts. Use your GitHub **noreply** e-mail for commits. Details: [AGENTS.md §4](../AGENTS.md#4-what-must-never-be-committed).
 
-## 7. AI agent handoff prompt
+## 7. Using AI tools
 
-Paste this at the start of an AI session that will work in this repository, then add your Jira task's own prompt.
+No issue and no document in this repository gives a ready-made AI prompt: what you need changes with the task and with what you find. If you use an AI tool, brief it yourself from your Jira issue and the template, correct it when it is wrong, and hold it to these rules:
 
-```text
-You are helping on ClearQuery: Ambiguity-Aware Voice-to-SQL in Egyptian Arabic
-(MIU graduation project, V3.1). Repository: Amr-Heibaa/voice-to-sql-egyptian-arabic (public).
-
-Before doing anything, read in this order:
-1. AGENTS.md and CLAUDE.md (rules)
-2. PROJECT_STATUS.md (current status)
-3. docs/SPECIFICATION.md (canonical V3.1 specification; read the sections relevant to the task completely)
-4. docs/ARCHITECTURE.md (approved architecture and governance rules R1-R5)
-5. docs/SPRINT_0.md and the guide for my track (docs/proposal/, docs/presentation/ or docs/poc/)
-6. CONTRIBUTING.md (branch and pull request rules)
-My Jira task is CQP-__ ; I will paste its content.
-
-Rules:
-- Do not expand, reduce or redesign the V3.1 scope. Do not change the title, the registration
-  Abstract, the v6 diagram or the marked blocks in docs/.
-- Do not claim anything is implemented, measured, collected or approved unless I confirm it.
-- No invented papers, citations, numbers, benchmark results or test output.
-- Do not redefine P2 or P4; quote SPECIFICATION.md section 15.1.
+- An AI tool working in this repository reads `AGENTS.md` and `CLAUDE.md` first.
+- Do not expand, reduce or redesign the V3.1 scope. Do not change the title, the registration Abstract, the v6 diagram or the marked blocks in `docs/`.
+- Nothing is described as implemented, measured, collected or approved unless the team has confirmed it.
+- No invented papers, citations, numbers, benchmark results or test output. Open every source yourself.
+- P2 and P4 are defined in [SPECIFICATION.md §15.1](SPECIFICATION.md); do not redefine them.
 - Do not guess people's identities, GitHub handles or Jira accounts.
-- Work only on a feature branch; never push to main; never merge; never force-push.
-- Touch only files my task needs. Never commit secrets, private links or personal data.
-- Finish by listing every file you changed and every check you ran with its real result.
-```
+- Work only on a feature branch; never push to `main`, merge or force-push.
+- Never give an AI tool secrets, private links, personal data or restricted datasets.
 
 ## 8. Next milestone and immediate actions
 
-The next milestone is **Gate G-A on 28 Oct 2026** (PoC Interface Contract v1.0) together with the protocol and framework tasks due 27–28 Oct. Immediate actions:
+The next milestone is **Gate G-A on 28 Oct 2026** (PoC Interface Contract v1.0) together with the protocol and framework tasks due 28 Oct. Immediate actions:
 
 1. Everyone: read §3 and open your first Jira task from §4.
 2. Amr: confirm the GitHub handles of Sayed and George, create the University Drive folder, decide where PoC code lives, and send the PoC scope to the supervisor.
